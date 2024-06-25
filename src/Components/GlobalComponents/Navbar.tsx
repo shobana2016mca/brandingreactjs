@@ -14,6 +14,7 @@ interface SubMenuItem {
   export default function Navbar() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [openSubMenuIndex, setOpenSubMenuIndex] = useState<number | null>(null);
+    
   
     const menuItems: MenuItem[] = [
       {
