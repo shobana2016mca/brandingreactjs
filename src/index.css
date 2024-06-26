@@ -29,3 +29,12 @@ body{
 }
 
 
+.partial-background {
+
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 80%, #19191F 20%);
+}
+
+.bk-white {
+
+  background: linear-gradient(to bottom, #19191F  90%, rgb(255, 255, 255) 10%);
+}

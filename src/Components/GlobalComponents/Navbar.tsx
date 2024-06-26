@@ -90,7 +90,7 @@ interface SubMenuItem {
       <div className='w-full py-4 mx-auto bg-white lg:flex lg:justify-between lg:items-center'>
         <div className='flex items-center justify-between px-6'>
           <Link to='/'>
-            <img className='w-auto h-12' src='vite.svg' alt='Astrobot Logo' />
+            <img className='w-auto h-12 ' src='header-logo.png' alt='Astrobot Logo' />
           </Link>
           <div className='lg:hidden'>
             <button
@@ -130,24 +130,6 @@ interface SubMenuItem {
             isOpen ? 'translate-x-0' : '-translate-x-full'
           } lg:flex lg:items-center max-lg:mt-2 max-md:bg-white max-lg:w-[70%] px-6 pb-2 pt-2`}
         >
-          {/* <div className='flex justify-end lg:hidden'>
-            <button
-              onClick={toggleMenu}
-              className=' focus:outline-none'
-              aria-label='close menu'
-            >
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                className='w-6 h-6'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                strokeWidth='2'
-              >
-                <path strokeLinecap='round' strokeLinejoin='round' d='M6 18L18 6M6 6l12 12' />
-              </svg>
-            </button>
-          </div> */}
 
           <div className='lg:flex lg:items-center lg:space-x-6'>
             {menuItems.map((menuItem, index) => (
@@ -190,7 +172,7 @@ interface SubMenuItem {
                         <li key={subIndex}>
                           <Link
                             to={subItem.href}
-                            className='block px-3 py-2 font-semibold text-black transition-colors duration-300 transform hover:text-orange-600 lg:hover:bg-orange-600'
+                            className='block px-3 py-2 font-semibold text-black transition-colors duration-300 transform hover:max-lg:text-orange-600 hover:lg:text-white lg:hover:bg-orange-600'
                           >
                             {subItem.title}
                           </Link>
