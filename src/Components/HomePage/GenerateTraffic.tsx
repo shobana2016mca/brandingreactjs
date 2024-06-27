@@ -3,13 +3,11 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const GenerateTraffic: React.FC = () => {
   return (
-    <div className="relative flex items-center justify-center min-h-screen p-6 ">
-         <div className=" absolute  bg-white w-full h-[90%] -z-10 top-0" ></div>
-        <div className=" absolute bg-[#EBF1F3] w-full h-full -z-20 top-0" ></div>
+    <div className="relative flex items-center justify-center p-2 lg:p-6 max-md:bg-white-gray md:bg-white xl:bg-white-gray ">
       <div className="grid max-w-screen-xl grid-cols-1 gap-8 mx-auto md:grid-cols-2">
         <div className="flex flex-col justify-center p-6">
           <h2 className="text-sm font-semibold text-red-500">GROW YOUR BUSINESS</h2>
-          <h1 className="mt-2 text-4xl font-bold text-black">
+          <h1 className="mt-2 text-5xl font-bold text-black">
             Generate <span className="text-red-500">100% Traffic</span> On Your Website
           </h1>
           <p className="mt-4 text-gray-600">

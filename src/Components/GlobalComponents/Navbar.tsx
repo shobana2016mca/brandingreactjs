@@ -17,23 +17,12 @@ interface SubMenuItem {
     
   
     const menuItems: MenuItem[] = [
+
       {
-        title: 'Services',
-        subMenu: [
-          { title: 'Join Slack', href: '#' },
-          { title: 'Browse Topics', href: '#' },
-          { title: 'Random Item', href: '#' },
-          { title: 'Experts', href: '#' },
-        ],
+        title: 'Home',
+        href: '/',
       },
-      {
-        title: 'Products',
-        subMenu: [
-          { title: 'New Arrivals', href: '#' },
-          { title: 'Best Sellers', href: '#' },
-          { title: 'Discounts', href: '#' },
-        ],
-      },
+      
       {
         title: 'About',
         href: '/about-us',
@@ -43,8 +32,8 @@ interface SubMenuItem {
         href: '/contact-us',
       },
       {
-        title: 'Blog Page',
-        href: '/blog-posts',
+        title: 'Services',
+        href: '/services',
       },
       {
         title: 'Company',
@@ -52,14 +41,6 @@ interface SubMenuItem {
           { title: 'About Us', href: '#' },
           { title: 'Careers', href: '#' },
           { title: 'Contact', href: '#' },
-        ],
-      },
-      {
-        title: 'Resources',
-        subMenu: [
-          { title: 'Blog', href: '#' },
-          { title: 'Webinars', href: '#' },
-          { title: 'Case Studies', href: '#' },
         ],
       },
     ];
@@ -86,7 +67,7 @@ interface SubMenuItem {
   };
 
   return (
-    <header className='relative bg-white shadow lg:bg-transparent '>
+    <header className='relative max-w-screen-xl mx-auto bg-white shadow lg:bg-transparent '>
       <div className='w-full py-4 mx-auto bg-white lg:flex lg:justify-between lg:items-center'>
         <div className='flex items-center justify-between px-6'>
           <Link to='/'>
