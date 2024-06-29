@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "./Card";
 import { FaPlay, FaTimes } from "react-icons/fa";
+import useIntract from "../GlobalComponents/useIntract";
 
 
 
@@ -14,6 +15,7 @@ interface Cards {
 
 function Services() {
     const [showVideo, setShowVideo] = useState<boolean>(false);
+    const { ref, isVisible } = useIntract();
 
     const openVideo = (): void => {
       setShowVideo(true);
@@ -51,13 +53,13 @@ function Services() {
       ];
 
     return (
-        <section className="bg-[#EBF1F3] py-16">
-        <div className="max-w-screen-xl px-4 mx-auto">
+        <section className="bg-[#EBF1F3] py-16 " ref={ref} >
+        <div className={`max-w-screen-xl px-4 mx-auto ${isVisible ? 'animate-fadeUp' : '  '} `}>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="flex items-center justify-center">
-              <div className="pl-6 border-l-[12px] border-orange-600">
+              <div className={`pl-6 border-l-[12px] border-orange-600 ${isVisible ? 'animate-fadeUp' : '  '} `}>
                 <label className="text-orange-600 text-md">Our Services</label>
-                <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
+                <h1 className={`text-3xl font-bold md:text-4xl lg:text-5xl ${isVisible ? 'animate-fadeUp' : '  '} `}>
                   Our Benefit We Can Offer To You
                 </h1>
               </div>
@@ -86,7 +88,7 @@ function Services() {
               </button>
             </div>
             {showVideo && (
-              <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
+              <div className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 ${isVisible ? 'animate-fadeUp' : '  '}  `}>
                 <div className="relative z-20">
                   <button
                     className="absolute text-2xl text-white top-4 right-4"
@@ -102,6 +104,7 @@ function Services() {
                 </div>
               </div>
             )}
+            
             {CardData.map((e, index) => (
               <div key={index}>
                 <Card

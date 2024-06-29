@@ -1,14 +1,16 @@
 import * as React from "react";
+import useIntract from "../GlobalComponents/useIntract";
 
 interface IAppProps {}
 
 const Testimonials: React.FunctionComponent<IAppProps> = () => {
+  const { ref, isVisible } = useIntract();
   return (
     <>
       <section className="w-full p-5 max-md:bg-white-black xl:bg-white-black md:p-20">
         
         <div className="grid max-w-screen-xl grid-cols-1 gap-2 mx-auto md:grid-cols-2">
-          <div className="">
+          <div className={`${isVisible ? 'animate-fadeUp ' : '  '} `} ref={ref}>
             <div className="pl-8 border-l-8 md:border-l-[12px] border-orange-600 md:pl-16 ">
               <p className="mt-8 mb-3 text-lg text-orange-600 ">TESTIMONIALS</p>
               <h1 className="mb-2 text-3xl font-bold md:text-4xl lg:text-6xl ">
@@ -25,7 +27,7 @@ const Testimonials: React.FunctionComponent<IAppProps> = () => {
               <div className="w-20 h-20 rounded-full ">
                 <img
                   src="home-03-testimonials-img1.png"
-                  className="object-contain max-w-full rounded-full "
+                  className="object-contain max-w-full rounded-full animate-fadeUp "
                 />
               </div>
               <div className="flex flex-col items-center justify-center ">
@@ -37,8 +39,8 @@ const Testimonials: React.FunctionComponent<IAppProps> = () => {
             </div>
           </div>
 
-          <div className=" max-w-[590px] h-auto mx-auto mt-4  flex items-center justify-center">
-            <img src="Testimonials-img.png" className="object-contain max-w-full "/>
+          <div className={` max-w-[590px] h-auto mx-auto mt-4  flex items-center justify-center ${isVisible ? 'animate-fadeUp ' : '  '} `}>
+            <img src="Testimonials-img.png" className="object-contain max-w-full animate-fadeUp "/>
           </div>
 
 

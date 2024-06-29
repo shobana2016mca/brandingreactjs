@@ -1,7 +1,7 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import SideBorderHeading from '../GlobalComponents/SideBoderHeading';
-
+import useIntract from "../GlobalComponents/useIntract";
 interface SocialMediaLinks {
     facebook: string;
     twitter: string;
@@ -62,8 +62,9 @@ const teamMembers: TeamMember[] = [
 
 
 export default function TeamSection() {
+  const { ref, isVisible } = useIntract();
   return (
-    <div className='w-full py-12 mt-10'>
+    <div className='w-full py-12 mt-10' ref={ref}>
       <div className='max-w-screen-xl mx-auto '>
         <div className='mb-16 md:mb-24 '>
         <SideBorderHeading heading='OUR TEAM MEMBERS' subHeading='Meet Our Talented Creatives'/>
@@ -74,12 +75,12 @@ export default function TeamSection() {
             <div
               key={index}
               className='flex justify-center w-full px-4 mb-8'>
-              <div className='relative w-64 overflow-hidden bg-white shadow-lg group'>
+              <div className={`relative w-64 overflow-hidden bg-white shadow-lg group ${isVisible ? 'animate-popup ' : '  '} `}>
                 <img
                   src={member.image}
                   alt={member.name} 
 
-                  className='object-cover h-full max-w-full'
+                  className='object-cover h-full max-w-full animate-fadeUp'
                 />
                 
                 <div className='absolute inset-0 flex flex-col items-center justify-center transition transform translate-y-full bg-black bg-opacity-50 group-hover:translate-y-0'>

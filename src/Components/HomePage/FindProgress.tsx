@@ -1,13 +1,17 @@
+import useIntract from "../GlobalComponents/useIntract";
+
 function FindProgress() {
+  const { ref, isVisible } = useIntract();
+
   return (
-    <div className="relative w-full">
+    <div className="relative w-full" ref={ref}>
         <div className=" absolute top-0 bg-[#19191F] w-full h-[90%] -z-10 " ></div>
       <div className="max-w-screen-xl mx-auto max-md:flex max-md:flex-col-reverse md:grid md:grid-cols-2">
-        <section className="md:max-w-[460px] w-full p-3 mt-8 mx-auto ">
-            <img src="find-progress.png" className="object-contain h-auto max-w-full "/>
+        <section className={`md:max-w-[460px] w-full p-3 mt-8 mx-auto ${isVisible ? 'animate-fadeUp' : '  '}`}>
+            <img src="find-progress.png" className="object-contain h-auto max-w-full animate-fadeUp "/>
         </section>
         <section className="flex flex-col justify-center ">
-          <div className="flex items-center justify-center p-6 mt-8 ">
+          <div className={`flex items-center justify-center p-6 mt-8 ${isVisible ? 'animate-fadeUp' : '  '} `}>
             <div className="w-full max-w-md">
               <h2 className="text-sm font-semibold text-red-500">
                 FIND PROGRESS

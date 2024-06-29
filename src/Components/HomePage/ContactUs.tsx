@@ -1,16 +1,18 @@
 import * as React from 'react';
+import useIntract from "../GlobalComponents/useIntract";
 
 interface IAppProps {
 }
 
 const ContactUs: React.FunctionComponent<IAppProps> = () => {
+  const { ref, isVisible } = useIntract();
   return (<>
-<div className="flex flex-col items-center max-md:bg-black-white md:bg-[#19191F] xl:bg-black-white ">
+<div className="flex flex-col items-center max-md:bg-black-white md:bg-[#19191F] xl:bg-black-white p-2 " ref={ref}>
       <div className="flex flex-col-reverse max-w-screen-xl gap-8 mx-auto mt-8 md:flex-row">
-        <div className=" max-w-[590px] mt-4">
-          <img src="Get-in-Touch-img.png" alt="Working" className="object-contain max-w-full " />
+        <div className={` max-w-[590px] mt-4 ${isVisible ? 'animate-fadeUp ' : '  '} `}>
+          <img src="Get-in-Touch-img.png" alt="Working" className="object-contain max-w-full animate-fadeUp " />
         </div>
-        <div className="flex flex-col items-center justify-center mt-4 ">
+        <div className={`flex flex-col items-center justify-center mt-4 ${isVisible ? 'animate-fadeUp ' : '  '} `}>
         <div className="pl-8 mb-4 border-l-8 border-orange-600 ">
               <p className="mb-3 text-lg text-orange-600 ">GET IN TOUCH</p>
               <h1 className="mb-2 text-3xl font-bold text-white md:text-4xl lg:text-6xl ">

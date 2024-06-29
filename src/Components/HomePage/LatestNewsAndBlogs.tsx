@@ -1,4 +1,5 @@
 import React from 'react';
+import useIntract from "../GlobalComponents/useIntract";
 
 interface NewsBlog {
   id: number;
@@ -14,10 +15,11 @@ const newsBlogs: NewsBlog[] = [
 ];
 
 const LatestNewsAndBlogs: React.FC = () => {
+  const { ref, isVisible } = useIntract();
   return (
-    <div className="py-12 bg-white">
+    <div className="py-12 bg-white" ref={ref}>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="text-center">
+        <div className={` text-center ${isVisible ? 'animate-fadeUp ' : '  '} `}>
           <h2 className="text-lg font-semibold tracking-wide text-orange-600 uppercase">News and Updates</h2>
           <p className="mt-2 text-4xl font-extrabold leading-8 tracking-tight text-gray-900 md:text-7xl">
             Latest News and Blogs
@@ -27,8 +29,8 @@ const LatestNewsAndBlogs: React.FC = () => {
         <div className="mt-10 lg:mt-20">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {newsBlogs.map((newsBlog) => (
-              <div key={newsBlog.id} className="flex flex-col items-center text-center">
-                <img src={newsBlog.image} alt={newsBlog.title} className="object-cover w-full h-58" />
+              <div key={newsBlog.id} className={`flex flex-col items-center text-center ${isVisible ? 'animate-fadeUp ' : '  '} `}>
+                <img src={newsBlog.image} alt={newsBlog.title} className="object-cover w-full h-58 animate-fadeUp" />
                 <a href={newsBlog.link} className="mt-4 font-bold leading-6 text-left text-gray-900 text-md md:text-lg hover:text-orange-600">{newsBlog.title}</a>
               </div>
             ))}

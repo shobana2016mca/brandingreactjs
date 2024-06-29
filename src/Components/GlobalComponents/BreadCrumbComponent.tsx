@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import useIntract from "../GlobalComponents/useIntract";
 
 interface IBreadCrumbComponentProps {}
 
@@ -34,6 +35,7 @@ const BreadCrumbComponent: React.FunctionComponent<
   IBreadCrumbComponentProps
 > = () => {
   const { pathname } = useLocation();
+  const { ref, isVisible } = useIntract();
 
   // Splitting the pathname into segments and filtering out empty segments
   const segments = pathname.split("/").filter((segment) => segment !== "");
@@ -55,9 +57,9 @@ const BreadCrumbComponent: React.FunctionComponent<
 
   return (
     <>
-      <div className="bg-[#19191F] flex flex-col items-center justify-center w-full">
+      <div className="bg-[#19191F] flex flex-col items-center justify-center w-full" ref={ref}>
         <div className="grid max-w-screen-xl mx-auto grid-col-1 md:grid-cols-2">
-          <section className="flex flex-col justify-center m-4 lg:ml-36">
+          <section className={`flex flex-col justify-center m-4 lg:ml-36 ${isVisible ? 'animate-fadeUp ' : '  '} `}>
            
               {data && (
               <div className="mt-4">
@@ -85,11 +87,11 @@ const BreadCrumbComponent: React.FunctionComponent<
             </div>
 
           </section>
-          <section className="max-w-[490px] w-full p-3 mt-8 mx-auto">
+          <section className={`max-w-[490px] w-full p-3 mt-8 mx-auto ${isVisible ? 'animate-fadeUp ' : '  '} `}>
             {data && (
               <img
                 src={data.image}
-                className="object-contain h-auto max-w-full"
+                className="object-contain h-auto max-w-full animate-fadeUp"
                 alt="Placeholder"
               />
             )}

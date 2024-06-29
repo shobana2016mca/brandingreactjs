@@ -3,6 +3,8 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPhone ,FaRegSquare } from 'reac
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaLocationArrow } from "react-icons/fa6";
+import useIntract from "../GlobalComponents/useIntract";
+
 
 
 
@@ -54,11 +56,12 @@ const footerData: FooterData = {
 };
 
 const Footer: React.FC = () => {
+  const { ref, isVisible } = useIntract();
   return (
-    <footer className="py-8 bg-[#EBF1F3]">
+    <footer className="py-8 bg-[#EBF1F3]" ref={ref}>
       <div className="max-w-screen-xl p-4 mx-auto sm:p-6 lg:p-8">
         <div className="flex justify-center md:justify-start">
-              <img src={footerData.logo} alt="Keywordly" className="h-10" />
+              <img src={footerData.logo} alt="Keywordly" className="h-10 " />
             </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="text-center md:text-left">
@@ -109,7 +112,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-8 text-sm text-center border-t-2 md:text-base lg:text-lg">
-          <p className='mt-4 '>{footerData.copyright}</p>
+          <p className={`mt-4 ${isVisible ? 'animate-fadeUp ' : '  '} `}>{footerData.copyright}</p>
         </div>
       </div>
     </footer>
