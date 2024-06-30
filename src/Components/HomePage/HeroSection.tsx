@@ -31,7 +31,7 @@ function HeroSection() {
             </a>
           </div>
         </section>
-        <section className="max-w-[590px] lg:min-w-[590px] p-3 mt-8 mx-auto  ">
+        <section className="max-w-[590px] lg:min-w-[590px] max-sm: min-h-[340px] p-3 mt-8 mx-auto  ">
           <img
             loading="lazy"
             src="Home-01-img.png"

@@ -40,10 +40,6 @@ const AboutUs: React.FunctionComponent<IAppProps> = () => {
       <FindProgress/>
       <ProfileCard/>
       <Compines/>
-
-      
-     
-
       
          </>);
 };
