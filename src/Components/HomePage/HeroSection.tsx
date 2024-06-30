@@ -4,11 +4,11 @@ function HeroSection() {
   const { ref, isVisible } = useIntract();
 
   return (
-    <div className="max-md:bg-black-white bg-[#19191F] xl:bg-black-white flex flex-col items-center justify-center w-full">
+    <div className="max-md:bg-black-white bg-[#19191F] lg:h-[650px] xl:bg-black-white flex flex-col items-center justify-center w-full">
       <div className="grid max-w-screen-xl mx-auto grid-col-1 md:grid-cols-2">
         <section
           ref={ref}
-          className={`flex flex-col justify-center m-4 lg:ml-36 ${isVisible ? "animate-slideInDown" : "  "}`}
+          className={`flex flex-col  justify-center m-4 lg:ml-36 ${isVisible ? "animate-slideInDown" : "  "}`}
         >
           <h1
             className={`transition-opacity duration-1000 transform mb-4 text-4xl font-bold text-left text-white md:text-5xl lg:text-7xl`}
@@ -31,7 +31,7 @@ function HeroSection() {
             </a>
           </div>
         </section>
-        <section className="max-w-[590px] p-3 mt-8 mx-auto  ">
+        <section className="max-w-[590px] lg:min-w-[590px] p-3 mt-8 mx-auto  ">
           <img
             loading="lazy"
             src="Home-01-img.png"

@@ -57,7 +57,7 @@ const BreadCrumbComponent: React.FunctionComponent<
 
   return (
     <>
-      <div className="bg-[#19191F] flex flex-col items-center justify-center w-full" ref={ref}>
+      <div className="bg-[#19191F] flex flex-col lg:h-[550px] items-center justify-center w-full" ref={ref}>
         <div className="grid max-w-screen-xl mx-auto grid-col-1 md:grid-cols-2">
           <section className={`flex flex-col justify-center m-4 lg:ml-36 ${isVisible ? 'animate-fadeUp ' : '  '} `}>
            
