@@ -10,7 +10,7 @@ const ContactUs: React.FunctionComponent<IAppProps> = () => {
 <div className="flex flex-col items-center max-md:bg-black-white md:bg-[#19191F] xl:bg-black-white p-2 " ref={ref}>
       <div className="flex flex-col-reverse max-w-screen-xl gap-8 mx-auto mt-8 md:flex-row">
         <div className={` max-w-[590px] mt-4 ${isVisible ? 'animate-fadeUp ' : '  '} `}>
-          <img src="Get-in-Touch-img.png" alt="Working" className="object-contain max-w-full animate-fadeUp " />
+          <img src="Get-in-Touch-img.png" loading="lazy" alt="Working" className="object-contain max-w-full animate-fadeUp " />
         </div>
         <div className={`flex flex-col items-center justify-center mt-4 ${isVisible ? 'animate-fadeUp ' : '  '} `}>
         <div className="pl-8 mb-4 border-l-8 border-orange-600 ">

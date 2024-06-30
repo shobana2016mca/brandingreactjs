@@ -30,7 +30,7 @@ const LatestNewsAndBlogs: React.FC = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {newsBlogs.map((newsBlog) => (
               <div key={newsBlog.id} className={`flex flex-col items-center text-center ${isVisible ? 'animate-fadeUp ' : '  '} `}>
-                <img src={newsBlog.image} alt={newsBlog.title} className="object-cover w-full h-58 animate-fadeUp" />
+                <img loading="lazy" src={newsBlog.image} alt={newsBlog.title} className="object-cover w-full h-58 animate-fadeUp" />
                 <a href={newsBlog.link} className="mt-4 font-bold leading-6 text-left text-gray-900 text-md md:text-lg hover:text-orange-600">{newsBlog.title}</a>
               </div>
             ))}

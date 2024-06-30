@@ -39,7 +39,7 @@ function Compines() {
           {Icons.map((company, index) => (
             <>
               <div key={index} className="flex items-center justify-center p-4">
-                <img src={company.icon}  className={`h-auto max-w-full animate-fadeUp ${isVisible ? 'animate-popup' : '  '}`} />
+                <img src={company.icon} loading="lazy"  className={`h-auto max-w-full animate-fadeUp ${isVisible ? 'animate-popup' : '  '}`} />
               </div>
             </>
           ))}

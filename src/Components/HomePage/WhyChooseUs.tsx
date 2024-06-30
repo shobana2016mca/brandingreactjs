@@ -38,7 +38,7 @@ const WhyChooseUs: React.FunctionComponent<IAppProps> = () => {
         <h1 className={`mb-4 text-2xl font-bold md:text-4xl ${isVisible ? 'animate-fadeUp ' : '  '} `}>Why SEO Service is Important For Your Business?</h1>
         <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
           <div className={`flex justify-center max-w-[540px] p-4 mx-auto ${isVisible ? 'animate-fadeUp ' : '  '}`}>
-            <img src="Why-Choose-Us-img.png" alt="SEO" className="object-contain max-w-full animate-fadeUp " />
+            <img  loading="lazy" src="Why-Choose-Us-img.png" alt="SEO" className="object-contain max-w-full animate-fadeUp " />
           </div>
           
           <div className={`p-4 ${isVisible ? 'animate-fadeUp ' : '  '} `}>
@@ -46,7 +46,7 @@ const WhyChooseUs: React.FunctionComponent<IAppProps> = () => {
 
               {card.map((e,index)=>(
                  <div className="mb-4 max-w-[280px] " key={index}>
-                 <img src={e.image} alt="Link Building" className="w-16 h-16 mb-4 mr-2"/>
+                 <img src={e.image} alt="Link Building" loading="lazy" className="w-16 h-16 mb-4 mr-2"/>
                  <h2 className="mb-4 text-xl font-semibold">{e.heading}</h2>
                  <p className="mb-4">{e.paragraph}</p>
                </div>

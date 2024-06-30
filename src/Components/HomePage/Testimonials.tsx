@@ -25,7 +25,8 @@ const Testimonials: React.FunctionComponent<IAppProps> = () => {
             </p>
             <div className="flex gap-1 mt-4 ">
               <div className="w-20 h-20 rounded-full ">
-                <img
+                <img 
+                loading="lazy"
                   src="home-03-testimonials-img1.png"
                   className="object-contain max-w-full rounded-full animate-fadeUp "
                 />
@@ -40,7 +41,7 @@ const Testimonials: React.FunctionComponent<IAppProps> = () => {
           </div>
 
           <div className={` max-w-[590px] h-auto mx-auto mt-4  flex items-center justify-center ${isVisible ? 'animate-fadeUp ' : '  '} `}>
-            <img src="Testimonials-img.png" className="object-contain max-w-full animate-fadeUp "/>
+            <img loading="lazy" src="Testimonials-img.png" className="object-contain max-w-full animate-fadeUp "/>
           </div>
 
 

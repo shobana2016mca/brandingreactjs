@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
     <footer className="py-8 bg-[#EBF1F3]" ref={ref}>
       <div className="max-w-screen-xl p-4 mx-auto sm:p-6 lg:p-8">
         <div className="flex justify-center md:justify-start">
-              <img src={footerData.logo} alt="Keywordly" className="h-10 " />
+              <img src={footerData.logo} loading="lazy" alt="Keywordly" className="h-10 " />
             </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="text-center md:text-left">

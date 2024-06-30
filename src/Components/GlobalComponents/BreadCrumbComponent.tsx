@@ -90,6 +90,7 @@ const BreadCrumbComponent: React.FunctionComponent<
           <section className={`max-w-[490px] w-full p-3 mt-8 mx-auto ${isVisible ? 'animate-fadeUp ' : '  '} `}>
             {data && (
               <img
+              loading="lazy"
                 src={data.image}
                 className="object-contain h-auto max-w-full animate-fadeUp"
                 alt="Placeholder"

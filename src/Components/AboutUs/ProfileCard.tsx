@@ -79,6 +79,7 @@ export default function TeamSection() {
                 <img
                   src={member.image}
                   alt={member.name} 
+                  loading="lazy"
 
                   className='object-cover h-full max-w-full animate-fadeUp'
                 />
