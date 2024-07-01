@@ -36,13 +36,17 @@ interface SubMenuItem {
         href: '/services',
       },
       {
-        title: 'Company',
-        subMenu: [
-          { title: 'About Us', href: '#' },
-          { title: 'Careers', href: '#' },
-          { title: 'Contact', href: '#' },
-        ],
+        title: 'Blog',
+        href: '/blogs',
       },
+      // {
+      //   title: 'Company',
+      //   subMenu: [
+      //     { title: 'About Us', href: '#' },
+      //     { title: 'Careers', href: '#' },
+      //     { title: 'Contact', href: '#' },
+      //   ],
+      // },
     ];
   
 

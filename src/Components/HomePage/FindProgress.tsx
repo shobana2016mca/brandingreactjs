@@ -8,7 +8,7 @@ function FindProgress() {
         <div className=" absolute top-0 bg-[#19191F] w-full h-[90%] -z-10 " ></div>
       <div className="max-w-screen-xl mx-auto max-md:flex max-md:flex-col-reverse md:grid md:grid-cols-2">
         <section className={`md:max-w-[460px] w-full p-3 mt-8 mx-auto ${isVisible ? 'animate-fadeUp' : '  '}`}>
-            <img loading="lazy" src="find-progress.png" className="object-contain h-auto max-w-full animate-fadeUp "/>
+            <img alt="progeress" loading="lazy" src="find-progress.png" className="object-contain h-auto max-w-full animate-fadeUp "/>
         </section>
         <section className="flex flex-col justify-center ">
           <div className={`flex items-center justify-center p-6 mt-8 ${isVisible ? 'animate-fadeUp' : '  '} `}>

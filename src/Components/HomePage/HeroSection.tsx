@@ -35,6 +35,7 @@ function HeroSection() {
           <img
             loading="lazy"
             src="Home-01-img.png"
+            alt=" Home-01-img"
             className={`object-contain h-auto max-w-full ${isVisible ? "animate-fadeUp " : " "} `}
           />
         </section>

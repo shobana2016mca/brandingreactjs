@@ -46,7 +46,7 @@ const WhyChooseUs: React.FunctionComponent<IAppProps> = () => {
 
               {card.map((e,index)=>(
                  <div className="mb-4 max-w-[280px] " key={index}>
-                 <img src={e.image} alt="Link Building" loading="lazy" className="w-16 h-16 mb-4 mr-2"/>
+                 <img src={e.image} alt={e.heading} loading="lazy" className="w-16 h-16 mb-4 mr-2"/>
                  <h2 className="mb-4 text-xl font-semibold">{e.heading}</h2>
                  <p className="mb-4">{e.paragraph}</p>
                </div>

@@ -30,6 +30,12 @@ export const BreadCrumbsList: BreadCrumbs[] = [
     description:
       "Ensuring the best return on investment for your bespoke SEO campaign requirement.",
   },
+  {
+    title: "Blogs",
+    image: "No",
+    description:
+      "Ensuring the best return on investment for your bespoke SEO campaign requirement.",
+  },
 ];
 
 const BreadCrumbComponent: React.FunctionComponent<IBreadCrumbComponentProps> = () => {
@@ -53,15 +59,15 @@ const BreadCrumbComponent: React.FunctionComponent<IBreadCrumbComponentProps> = 
 
   return (
     <div className="bg-[#19191F] flex flex-col lg:h-[550px] items-center justify-center w-full" ref={ref}>
-      <div className="grid max-w-screen-xl mx-auto grid-col-1 md:grid-cols-2">
-        <section className={`flex flex-col justify-center m-4 lg:ml-36 ${isVisible ? 'animate-fadeUp' : ''}`}>
+      <div className={`grid max-w-screen-xl mx-auto ${data?.image == "No" ? " flex items-center justify-center min-h-[400px]":"grid-col-1 md:grid-cols-2"} `}>
+        <section className={`flex flex-col justify-center ${data?.image == "No" ? ' items-center gap-4' : "lg:ml-36 "} m-4  ${isVisible ? 'animate-fadeUp' : ''}`}>
           {data && (
-            <div className="mt-4">
-              <h2 className="mt-4 text-3xl font-bold text-white md:text-7xl">{data.title}</h2>
-              <p className="mb-4 text-lg leading-7 text-gray-400">{data.description}</p>
+            <div className={`mt-4 ${data?.image == "No" ? 'text-center':''} `}>
+              <h2 className="mt-4 text-3xl font-bold text-white md:text-7xl ">{data.title}</h2>
+              <p className="mt-4 mb-4 text-lg leading-7 text-gray-400">{data.description}</p>
             </div>
           )}
-          <div className="flex items-center w-48 h-16 p-5 space-x-2 text-white capitalize border-2 border-orange-600">
+          <div className="flex items-center justify-center w-48 h-16 p-5 space-x-2 text-white capitalize border-2 border-orange-600">
             <Link to="/" className="text-sm">
               <span className="text-sm">Home</span>
             </Link>
@@ -76,13 +82,13 @@ const BreadCrumbComponent: React.FunctionComponent<IBreadCrumbComponentProps> = 
             ))}
           </div>
         </section>
-        <section className={`max-w-[490px] min-h-[340px] w-full p-3 mt-8 mx-auto ${isVisible ? 'animate-fadeUp' : ''}`}>
+        <section className={`max-w-[490px] min-h-[340px] w-full p-3 mt-8 mx-auto ${data?.image == "No" ? 'hidden' : 'block'} ${isVisible ? 'animate-fadeUp' : ''}`}>
           {data && (
             <img
               loading="lazy"
               src={data.image}
               className="object-contain h-auto max-w-full animate-fadeUp"
-              alt="Placeholder"
+              alt={data.title}
             />
           )}
         </section>

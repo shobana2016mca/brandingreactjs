@@ -40,7 +40,7 @@ const GenerateTraffic: React.FC = () => {
           </a>
         </div>
         <section className={`md:max-w-[490px] flex items-center justify-center w-full p-3 mt-8 mx-auto  ${isVisible ? 'animate-fadeUp' : '  '} `}>
-            <img loading="lazy" src="Grow-Your-Business.png" className="object-contain h-auto max-w-full mt-4 animate-fadeUp " />
+            <img loading="lazy" src="Grow-Your-Business.png" alt="Grow-Your-Business" className="object-contain h-auto max-w-full mt-4 animate-fadeUp " />
         </section>
         
       </div>
