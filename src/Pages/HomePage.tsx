@@ -10,7 +10,7 @@ import ContactUs from "../Components/HomePage/ContactUs";
 import LatestNewsAndBlogs from "../Components/HomePage/LatestNewsAndBlogs";
 import Compines from "../Components/HomePage/Compines";
 import Services from "../Components/HomePage/Services";
-
+import { Helmet } from "react-helmet";
 
 
 function HomePage() {
@@ -31,6 +31,23 @@ function HomePage() {
 
   return (
     <div className="">
+   
+      <Helmet>
+        <title>Welcome to My Awesome Company</title>
+        <meta name="description" content="Discover the amazing products and services offered by My Awesome Company. We are committed to excellence and customer satisfaction." />
+        <meta name="keywords" content="home, awesome company, products, services" />
+        <meta property="og:title" content="Welcome to My Awesome Company" />
+        <meta property="og:description" content="Discover the amazing products and services offered by My Awesome Company. We are committed to excellence and customer satisfaction." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.myawesomecompany.com" />
+        <meta property="og:image" content="http://www.myawesomecompany.com/home-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@myawesomecompany" />
+        <meta name="twitter:title" content="Welcome to My Awesome Company" />
+        <meta name="twitter:description" content="Discover the amazing products and services offered by My Awesome Company. We are committed to excellence and customer satisfaction." />
+        <meta name="twitter:image" content="http://www.myawesomecompany.com/home-image.jpg" />
+        <link rel="canonical" href="http://www.myawesomecompany.com" />
+      </Helmet>
       
       <HeroSection />
       <Compines/>
