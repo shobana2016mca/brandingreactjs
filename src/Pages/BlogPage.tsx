@@ -1,4 +1,4 @@
-import { Router, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { newsBlogs } from "../../Constants";
 import { FaLocationArrow } from "react-icons/fa6";
 import RecentPosts from "../Components/GlobalComponents/RecentPosts";

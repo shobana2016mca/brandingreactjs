@@ -13,7 +13,7 @@ const Blogs: React.FC = () => {
   window.scrollTo(0, 0); 
 
   console.log(category);
-  const { ref, isVisible } = useIntract();
+  const { ref,isVisible  } = useIntract();
   return (
     <div className='w-full '>
     {category == undefined ? (<BreadCrumbComponent/>):("")}
@@ -21,7 +21,7 @@ const Blogs: React.FC = () => {
     <div className="py-12 bg-white" ref={ref}>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {category ? (<CenterHeader heading='Category' subHeading={category}/>):(<CenterHeader heading='News and Updates' subHeading='Latest News and Blogs'/>)} 
-        {category ? (<NewsBlogs newsBlogs={categoryBlogs} isVisible={true} />):(<NewsBlogs newsBlogs={newsBlogs} isVisible={true} />)}
+        {category ? (<NewsBlogs newsBlogs={categoryBlogs} isVisible={isVisible} />):(<NewsBlogs newsBlogs={newsBlogs} isVisible={isVisible} />)}
       </div>
     </div>
     </div>
