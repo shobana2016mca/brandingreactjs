@@ -67,13 +67,13 @@ const Footer: React.FC = () => {
           <div className="text-center md:text-left">
             
             <p className="mt-4 text-sm text-gray-600 md:text-base lg:text-lg">{footerData.description}</p>
-            <ul className="flex justify-center mt-4 space-x-4 md:justify-start">
+            <div className="flex justify-center mt-4 space-x-4 md:justify-start">
               {footerData.socialMedia.map((social, index) => (
                 <a key={index} href={social.href} className="p-3 text-xl text-black border-2 border-black hover:text-white hover:bg-orange-600 hover:border-none" aria-label={social.label}>
                   {social.icon}
                 </a>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div className="flex gap-4 text-center md:text-left max-lg:block">

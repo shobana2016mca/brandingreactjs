@@ -35,7 +35,7 @@ const GenerateTraffic: React.FC = () => {
               Search Engine Optimization
             </li>
           </ul>
-          <a className="px-6 py-3 mt-6 font-semibold text-white bg-black w-fit hover:bg-gray-800">
+          <a href='/' className="px-6 py-3 mt-6 font-semibold text-white bg-black w-fit hover:bg-gray-800">
             Get Started
           </a>
         </div>
