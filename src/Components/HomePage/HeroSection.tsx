@@ -21,11 +21,11 @@ const HeroSection: React.FC = () => {
             nisl eros, pulvinar facilisis justo mollis.
           </p>
           <div className="flex-row w-full mb-4 md:flex">
-            <a href="#" className="px-4 py-3 mr-3 text-white bg-orange-600">
+            <a href="/" className="px-4 py-3 mr-3 text-white bg-orange-600">
               Get Started
             </a>
             <a
-              href="#"
+              href="/"
               className="px-4 py-3 text-white bg-transparent border border-orange-600"
             >
               How it Works?

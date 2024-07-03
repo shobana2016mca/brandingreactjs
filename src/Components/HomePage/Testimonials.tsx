@@ -33,9 +33,9 @@ const Testimonials: React.FunctionComponent<IAppProps> = () => {
                 />
               </div>
               <div className="flex flex-col items-center justify-center ">
-                <h3 className="text-xl font-bold text-orange-600 ">
+                <p className="text-xl font-bold text-orange-600 ">
                   Kevin Andrew
-                </h3>
+                </p>
                 <p className="text-gray-700 ">CEO - Company</p>
               </div>
             </div>

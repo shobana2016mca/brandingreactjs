@@ -75,7 +75,7 @@ interface SubMenuItem {
       <div className='w-full py-4 mx-auto bg-white lg:flex lg:justify-between lg:items-center'>
         <div className='flex items-center justify-between px-6'>
           <Link to='/'>
-            <img className='w-auto h-12 ' loading="lazy" src='/header-logo.png' alt='Astrobot Logo' />
+            <img className='w-auto h-12 ' width="auto" height="auto" loading="lazy" src='/header-logo.png' alt='Astrobot Logo' />
           </Link>
           <div className='lg:hidden'>
             <button

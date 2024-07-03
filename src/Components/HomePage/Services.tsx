@@ -75,7 +75,7 @@ function Services() {
 
           <div className="grid max-w-screen-xl grid-cols-1 gap-6 px-4 mx-auto mt-16 md:mt-36 md:grid-cols-2 lg:grid-cols-3">
             <div className="flex items-center justify-center h-64 col-span-1 p-4 mx-auto max-w-64 md:col-span-2 lg:w-auto lg:h-auto ">
-              <button className="relative" onClick={openVideo}>
+              <div className="relative" onClick={openVideo}>
                 <FaPlay className="absolute top-[-14px] left-[-14px] z-10 text-3xl text-white" />
                 <span className="absolute inset-0 flex items-center justify-center">
                   {/* First pulse */}
@@ -85,7 +85,7 @@ function Services() {
                   {/* Third pulse */}
                   <span className="absolute w-40 h-40 bg-orange-600 rounded-full opacity-75 animate-pulse"></span>
                 </span>
-              </button>
+              </div>
             </div>
             {showVideo && (
               <div className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 ${isVisible ? 'animate-fadeUp' : '  '}  `}>

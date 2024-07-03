@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex gap-4 text-center md:text-left max-lg:block">
-            <div className="w-full mb-4 space-y-2">
+            <ul className="w-full mb-4 space-y-2">
               {footerData.links.map((link, index) => (
                 <li key={index} className='list-none '>
 <a href={link.href} className="flex items-center text-sm text-gray-600 list-none md:text-base lg:text-lg hover:text-orange-600">
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
   {link.text}
 </a>                </li>
               ))}
-            </div>
+            </ul>
             <div className=''>
             <div className="flex items-center justify-start mb-1"><div><FaPhone className="block mr-2 text-orange-600" /></div> <p className="text-sm text-gray-600 md:text-base lg:text-lg ">{footerData.contact.phone}</p></div>
             <div className="flex items-center justify-start mb-1"> <div><IoMail className="block mr-2 text-orange-600" /> </div><p className="text-sm text-gray-600 md:text-base lg:text-lg "> {footerData.contact.email}</p></div>
