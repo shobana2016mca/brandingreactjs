@@ -27,7 +27,7 @@ const NewsBlogs: React.FC<NewsBlogsProps> = ({ newsBlogs, isVisible }) => {
           >
             <img 
               loading="lazy" 
-              src={newsBlog.image} 
+              src={`/${newsBlog.image}`} 
               alt={newsBlog.title} 
               className="object-cover w-full h-58 animate-fadeUp" 
             />

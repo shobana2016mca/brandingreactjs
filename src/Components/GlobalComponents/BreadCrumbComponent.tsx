@@ -67,7 +67,7 @@ const BreadCrumbComponent: React.FunctionComponent<IBreadCrumbComponentProps> = 
               <p className="mt-4 mb-4 text-lg leading-7 text-gray-400">{data.description}</p>
             </div>
           )}
-          <div className="flex items-center justify-center w-48 h-16 p-5 space-x-2 text-white capitalize border-2 border-orange-600">
+          <div className="flex items-center justify-center h-16 p-5 space-x-2 text-white capitalize border-2 border-orange-600 min-w-48">
             <Link to="/" className="text-sm">
               <span className="text-sm">Home</span>
             </Link>

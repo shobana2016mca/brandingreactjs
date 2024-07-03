@@ -71,3 +71,26 @@ interface SocialMediaLinks {
     },
   ];
   
+
+  interface NewsBlog {
+    id: number;
+    image: string;
+    title: string;
+    content : string;
+    author  :string;
+    date : string;
+    category : string;
+  }
+  
+  export const newsBlogs: NewsBlog[] = [
+    { id: 1, image: 'single-post-img.jpg', title: 'Use keywords strategically throughout the blog post.',content:"content", author:"teja",date:"03-07-2024",category:"uncategorized" },
+    { id: 2, image: 'single-post-img1.jpg', title: 'What is SEO? An explanation for beginners',content:"content" , author:"teja",date:"03-07-2024",category:"Seo  "  },
+    { id: 3, image: 'single-post-img2.jpg', title: 'What is SEO? An explanation for beginners' ,content:"content", author:"teja",date:"03-07-2024",category:"Seo"  },
+    { id: 4, image: 'single-post-img.jpg', title: 'Use keywords strategically throughout the blog post.',content:"content" , author:"teja",date:"03-07-2024" ,category:"keywords strategically" },
+    { id: 5, image: 'single-post-img.jpg', title: 'Use keywords strategically throughout the blog post.',content:"content", author:"teja",date:"03-07-2024",category:"uncategorized" },
+    { id: 6, image: 'single-post-img1.jpg', title: 'What is SEO? An explanation for beginners',content:"content" , author:"teja",date:"03-07-2024",category:"Seo  "  },
+    { id: 7, image: 'single-post-img2.jpg', title: 'What is SEO? An explanation for beginners' ,content:"content", author:"teja",date:"03-07-2024",category:"Seo"  },
+    { id: 8, image: 'single-post-img.jpg', title: 'Use keywords strategically throughout the blog post.',content:"content" , author:"teja",date:"03-07-2024" ,category:"keywords strategically" },
+  ];
+
+  export const category =["keywords strategically","Seo","uncategorized"];
