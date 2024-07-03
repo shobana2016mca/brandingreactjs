@@ -8,10 +8,6 @@ import { useEffect, useState } from "react";
 function BlogPage() {
     const { id } = useParams();
     const [currentId, setCurrentId] = useState(id);
-    const blog = newsBlogs.filter((e) => e.id.toString() == id);
-    console.log(blog);
-    console.log(blog[0].image);
-
     useEffect(() => {
         if (id !== currentId) {
             setCurrentId(id);
@@ -21,6 +17,11 @@ function BlogPage() {
         }
     }, [id, currentId]);
     
+    const blog = newsBlogs.filter((e) => e.id.toString() == id);
+    console.log(blog);
+    console.log(blog[0].image);
+
+  
 
     return (
         <div className="w-full ">
