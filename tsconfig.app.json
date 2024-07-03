@@ -25,6 +25,6 @@
   },
   "include": [
     "src",
-    "C:/Users/tejac/OneDrive/Desktop/React/elepress/elementorpress/Constants/index.ts"
+    "./Constants/index.ts",
   ]
 }
