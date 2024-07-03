@@ -1,7 +1,7 @@
-body{
-  box-sizing: border-box;
-  font-family: Inter,"sans-serif";
+body {
+  font-family: 'Inter', sans-serif;
 }
+
 
 .pulse{
   position: relative;

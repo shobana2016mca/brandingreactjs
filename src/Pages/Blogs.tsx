@@ -8,6 +8,7 @@ import CenterHeader from '../Components/GlobalComponents/CenterHeader';
 
 
 const Blogs: React.FC = () => {
+  window.scrollTo(0, 0); 
   const { category } = useParams();
   const categoryBlogs = newsBlogs.filter((e)=> e.category == category);
 

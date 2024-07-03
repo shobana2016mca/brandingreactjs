@@ -9,12 +9,12 @@ function BlogPage() {
     const { id } = useParams();
     const [currentId, setCurrentId] = useState(id);
     const [blog, setBlog] = useState(() => newsBlogs.filter((e) => e.id.toString() === id));
+    window.scrollTo(0, 0); 
+
 
     useEffect(() => {
         if (id !== currentId) {
             setCurrentId(id);
-            window.location.reload();
-            window.scrollTo(0, 0); 
            setBlog(newsBlogs.filter((e) => e.id.toString() == id));
         }
     }, [id, currentId]);

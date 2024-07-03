@@ -6,6 +6,7 @@ import Navbar from './Components/GlobalComponents/Navbar';
 import Loader from './Components/GlobalComponents/Loader';
 import Error404 from './Components/GlobalComponents/Error404';
 import FloatingWhatsAppButton from './Components/GlobalComponents/FloatingWhatsAppButton';
+import './fonts.css'; 
 
 // Lazy load pages
 const HomePage = lazy(() => import('./Pages/HomePage'));
