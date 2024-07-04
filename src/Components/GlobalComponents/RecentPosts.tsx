@@ -4,7 +4,7 @@ import * as React from 'react';
 import { FaClock } from "react-icons/fa";
 import { category } from "../../../Constants";
 import { SlArrowRight } from "react-icons/sl";
-
+import { formatTitle } from "./NewsBlogs";
 
 interface IRecentPostsProps {
 }
@@ -22,7 +22,7 @@ const RecentPosts: React.FunctionComponent<IRecentPostsProps> = () => {
                 {recentPosts.map((e,index)=>(<>
                 <li key={index}>
                 
-                  <Link to={`/blog/${e.id}/${e.title}`} className="flex items-center text-gray-800 ">
+                  <Link to={`/blog/${e.id}/${formatTitle(e.title)}`} className="flex items-center text-gray-800 ">
                     <img 
                       src={`/${e.image}`}
                       alt="Post 1"
