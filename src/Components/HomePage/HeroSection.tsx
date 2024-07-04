@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
         </section>
         <section className="max-w-[590px] min-h-[340px] p-3 mt-8 mx-auto">
           <img
-            src="contact-bg-img.jpg"
+            src="Home-01-img.png"
             alt="Illustration of web traffic growth"
             width="590"
             height="340"
