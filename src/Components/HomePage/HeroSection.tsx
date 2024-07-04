@@ -32,9 +32,9 @@ const HeroSection: React.FC = () => {
             </a>
           </div>
         </section>
-        <section className="max-w-[590px] lg:min-w-[590px] min-h-[340px] p-3 mt-8 mx-auto">
+        <section className="max-w-[590px] min-h-[340px] p-3 mt-8 mx-auto">
           <img
-            src="Home-01-img.png"
+            src="contact-bg-img.jpg"
             alt="Illustration of web traffic growth"
             width="590"
             height="340"
