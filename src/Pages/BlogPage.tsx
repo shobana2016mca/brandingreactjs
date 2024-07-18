@@ -19,8 +19,6 @@ function BlogPage() {
         }
     }, [id, currentId]);
 
-  
-
     return (
         <div className="w-full ">
             <div className="max-w-screen-xl mx-auto ">
