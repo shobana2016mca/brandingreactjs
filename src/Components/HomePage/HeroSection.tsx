@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start bg-black bg-opacity-20 ">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-lg max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
                 <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start pl-4 bg-black bg-opacity-50">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-lg max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
                 <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
@@ -83,7 +83,7 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start pl-4 bg-black bg-opacity-50">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-lg max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
                 <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
@@ -102,7 +102,7 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start pl-4 bg-black bg-opacity-50">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-lg max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
                 <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
@@ -121,7 +121,7 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start pl-4 bg-black bg-opacity-50">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-lg max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
                 <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
