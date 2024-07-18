@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import { A11y, Autoplay } from "swiper/modules";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"; // Importing React Icons
 import { Swiper as SwiperInstance } from 'swiper';
+import { Link } from "react-router-dom";
 
 const HeroSection: React.FC = () => {
   const swiperRef = React.useRef<SwiperInstance | null>(null);
@@ -23,7 +24,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <div className="relative max-w-screen-xl max-sm:h-[40vh] mx-auto">
+    <div className="relative max-w-screen-2xl max-sm:h-[40vh]  mx-auto">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[A11y, Autoplay]}
@@ -45,13 +46,18 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start bg-black bg-opacity-20 ">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-2xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
-                <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
+                <p className="text-white pl-2 md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                   nisl eros, pulvinar facilisis justo mollis.
                 </p>
+                
+            <Link to="#" className="px-3 py-2 pl-2 mt-1 mr-3 text-white bg-orange-600 w-fit">
+              Get Started
+            </Link>
+            
               </section>
             </div>
           </div>
@@ -64,13 +70,18 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start pl-4 bg-black bg-opacity-50">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-2xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
-                <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
+                <p className="text-white pl-2 md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                   nisl eros, pulvinar facilisis justo mollis.
                 </p>
+                
+            <Link to="#" className="px-3 py-2 pl-2 mt-1 mr-3 text-white bg-orange-600 w-fit">
+              Get Started
+            </Link>
+            
               </section>
             </div>
           </div>
@@ -83,13 +94,18 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start pl-4 bg-black bg-opacity-50">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-2xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
-                <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
+                <p className="text-white pl-2 md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                   nisl eros, pulvinar facilisis justo mollis.
                 </p>
+                
+            <Link to="#" className="px-3 py-2 pl-2 mt-1 mr-3 text-white bg-orange-600 w-fit">
+              Get Started
+            </Link>
+            
               </section>
             </div>
           </div>
@@ -102,13 +118,18 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start pl-4 bg-black bg-opacity-50">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-2xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
-                <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
+                <p className="text-white pl-2 md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                   nisl eros, pulvinar facilisis justo mollis.
                 </p>
+                
+            <Link to="#" className="px-3 py-2 pl-2 mt-1 mr-3 text-white bg-orange-600 w-fit">
+              Get Started
+            </Link>
+            
               </section>
             </div>
           </div>
@@ -121,13 +142,18 @@ const HeroSection: React.FC = () => {
             />
             <div className="absolute inset-0 flex items-center justify-start pl-4 bg-black bg-opacity-50">
               <section className="flex flex-col justify-center m-4 lg:ml-36">
-                <h1 className="mb-4 text-xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <h1 className="mb-4 text-2xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
                   Increase Your Web Traffic with Expert Team
                 </h1>
-                <p className="text-white md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
+                <p className="text-white pl-2 md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                   nisl eros, pulvinar facilisis justo mollis.
                 </p>
+                
+            <Link to="#" className="px-3 py-2 pl-2 mt-1 mr-3 text-white bg-orange-600 w-fit">
+              Get Started
+            </Link>
+            
               </section>
             </div>
           </div>

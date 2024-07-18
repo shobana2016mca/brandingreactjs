@@ -71,7 +71,7 @@ interface SubMenuItem {
   };
 
   return (
-    <header className='relative z-10 max-w-screen-xl mx-auto bg-white shadow lg:bg-transparent '>
+    <header className='relative z-10 mx-auto bg-white shadow max-w-screen-2xl lg:bg-transparent '>
       <div className='w-full py-4 mx-auto bg-white lg:flex lg:justify-between lg:items-center'>
         <div className='flex items-center justify-between px-6'>
           <Link to='/'>
