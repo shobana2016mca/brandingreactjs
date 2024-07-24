@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
         <SwiperSlide>
           <div className="relative">
             <img
-              src="/WhatsApp Image 2024-07-18 at 11.19.56_a5431556.jpg"
+              src="/banner.jpg"
               className="object-cover w-full max-sm:h-[40vh]"
             />
             <div className="absolute inset-0 flex items-center justify-start bg-black bg-opacity-20 ">
