@@ -2,17 +2,11 @@ import { useState } from "react";
 import Card from "./Card";
 import { FaPlay, FaTimes } from "react-icons/fa";
 import useIntract from "../GlobalComponents/useIntract";
-
-
-
 interface Cards {
     number: string;
     title: string;
     description: string;
   }
-  
-
-
 function Services() {
     const [showVideo, setShowVideo] = useState<boolean>(false);
     const { ref, isVisible } = useIntract();
@@ -28,31 +22,66 @@ function Services() {
     const CardData: Cards[] = [
         {
           number: "1",
-          title: "SEO Optimization",
+          title: "Website Development",
           description:
-            "PstrumEaque iEaque ipsa quae ab il vt quasi architecto beatae vitae nos srumEaque ipsa quae ab ill inventore ueritatis et quasi architect beataevit qe nostrumravtrad aavr.",
+            "Branding Solutions delivers expert website development with responsive designs, seamless navigation, and robust functionality, ensuring a captivating online presence that drives business growth and engages your audience.",
         },
         {
           number: "2",
+          title: "SEO Optimization",
+          description:
+            "Our Branding Solutions company offers comprehensive SEO optimization services to enhance your online visibility. We specialize in keyword research, on-page and off-page optimization, technical SEO, and content strategy to improve search engine rankings, drive organic traffic, and boost your brand's digital presence effectively.",
+        },
+        {
+          number: "3",
           title: "Online Marketing",
           description:
-            "PstrumEaque iEaque ipsa quae ab il vt quasi architecto beatae vitae nos srumEaque ipsa quae ab ill inventore ueritatis et quasi architect beataevit qe nostrumravtrad aavr.",
+            "Branding Solutions offers comprehensive online marketing services, including SEO, PPC, social media management, content marketing, and email campaigns. Our strategies enhance your brand visibility, drive traffic, and boost conversions. Partner with us to achieve your digital marketing goals and elevate your online presence.",
         },
         {
           number: "3",
           title: "PPC Services",
           description:
-            "PstrumEaque iEaque ipsa quae ab il vt quasi architecto beatae vitae nos srumEaque ipsa quae ab ill inventore ueritatis et quasi architect beataevit qe nostrumravtrad aavr.",
+            "Our PPC services drive targeted traffic and maximize ROI with expertly managed campaigns across Google Ads, Bing Ads, and social media platforms. We offer strategic keyword research, ad creation, bid management, and performance analysis to ensure your brand achieves optimal visibility and conversion rates in a competitive digital landscape.",
         },
         {
           number: "4",
-          title: "Business Growth",
+          title: "Email Marketing",
           description:
-            "PstrumEaque iEaque ipsa quae ab il vt quasi architecto beatae vitae nos srumEaque ipsa quae ab ill inventore ueritatis et quasi architect beataevit qe nostrumravtrad aavr.",
+            "Experience the power of targeted email marketing with Branding Solutions. Our expert team creates personalized campaigns that engage your audience, drive conversions, and boost your brand visibility. Harness the potential of data-driven strategies to deliver impactful messages directly to your customers' inboxes. Elevate your marketing with us.",
+        },
+        {
+          number: "5",
+          title: "branding Awareness",
+          description:
+            "Boost your brand's visibility with our comprehensive branding awareness services. At Branding Solutions, we specialize in creating impactful marketing strategies, engaging content, and eye-catching designs that resonate with your target audience. Elevate your brand recognition and stand out in a crowded market with our expert solutions.",
+        },
+        {
+          number: "6",
+          title: "UI/UX designs",
+          description:
+            "Our branding solutions company offers comprehensive UI/UX design services, crafting visually stunning and intuitive interfaces that enhance user experiences. We specialize in creating cohesive, user-centric designs that align with your brand identity, ensuring seamless interactions and improved customer satisfaction across all digital platforms.",
+        },
+        {
+          number: "7",
+          title: "Andriod Development",
+          description:
+            "Branding Solutions Company offers comprehensive Android development services, creating innovative and user-friendly mobile applications tailored to your business needs. Our expert developers ensure seamless performance, high security, and engaging user experiences, helping your brand thrive in the competitive mobile market. Transform your ideas into reality with our cutting-edge solutions.",
+        },
+        {
+          number: "8",
+          title: "Radio Adversting",
+          description:
+            "Boost your brand with our expert radio advertising services! We craft engaging, impactful radio spots that captivate your audience and drive results. From scriptwriting to production, we handle it all. Amplify your message and connect with listeners—choose our branding solutions company for effective radio advertising today!",
+        },
+        {
+          number: "9",
+          title: "Bulk sms",
+          description:
+            "Branding Solutions offers a comprehensive Bulk SMS service to enhance your business communications. Our platform ensures reliable, instant delivery of promotional and transactional messages, boosting engagement and customer reach. With user-friendly tools and detailed analytics, manage your campaigns efficiently and effectively. Elevate your brand's messaging with us today!",
         },
       ];
-
-    return (
+return (
         <section className="bg-[#EBF1F3] py-16 " ref={ref} >
         <div className={`max-w-screen-xl px-4 mx-auto ${isVisible ? 'animate-fadeUp' : '  '} `}>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

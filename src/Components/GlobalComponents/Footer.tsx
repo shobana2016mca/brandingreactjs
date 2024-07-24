@@ -33,7 +33,7 @@ interface FooterData {
 }
 
 const footerData: FooterData = {
-  logo: 'header-logo.png',
+  logo: 'BS-logo.png',
   description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit aut elit tellus luctus nec ullamcorper mattis aulvinar daibus leo.',
   socialMedia: [
     { href: '#', icon: <FaFacebookF />, label: 'Facebook' },
@@ -48,11 +48,11 @@ const footerData: FooterData = {
     { href: '#', text: 'Contact Us' },
   ],
   contact: {
-    phone: '+61 3 8376 6284',
-    email: 'Info@Keywordly.com',
-    address: '121 King Street, Melbourne Victoria 3000 Australia',
+    phone: '+91-90563-53599',
+    email: 'info@brandingsolutions.in',
+    address: '56 Green Wood Avenue, Lane number 3, Near Krishna Mandir, Kuki Dhab, Jalandhar',
   },
-  copyright: 'Copyright © 2024 Keywordly All rights reserved.',
+  copyright: 'Copyright © 2024 branding  All rights reserved.',
 };
 
 const Footer: React.FC = () => {
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
     <footer className="py-8 bg-[#EBF1F3]" ref={ref}>
       <div className="max-w-screen-xl p-4 mx-auto sm:p-6 lg:p-8">
         <div className="flex justify-center md:justify-start">
-              <img src={`/${footerData.logo}`} loading="lazy" alt="Keywordly" className="h-10 " />
+              <img src={`/${footerData.logo}`} loading="lazy" alt="branding" className="h-10 " />
             </div>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="text-center md:text-left">
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
               <div className="mt-2 text-left ">
                 <label className="flex text-sm text-gray-600 md:text-base lg:text-lg">
                 <FaRegSquare className='mt-1 mr-2 text-xs text-orange-600 ' />
-                  <p>Quis autem vel eum iure reprehenderit qui in ea voluptate esse.</p>
+                  <p>Sign up for emails</p>
                 </label>
               </div>
             </div>

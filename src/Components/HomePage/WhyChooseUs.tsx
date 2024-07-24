@@ -55,7 +55,7 @@ const WhyChooseUs: React.FunctionComponent<IAppProps> = () => {
             </div>
             <div className='flex '>
             <button className="px-4 py-2 mt-4 text-white bg-orange-600 ">
-              Know More About keywordly
+              Know More About branding solutions
             </button>
 
             </div>
