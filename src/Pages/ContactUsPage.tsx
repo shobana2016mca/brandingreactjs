@@ -3,7 +3,7 @@ import BreadCrumbComponent from "../Components/GlobalComponents/BreadCrumbCompon
 import CenterHeader from "../Components/GlobalComponents/CenterHeader";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import ContactUs from "../Components/HomePage/ContactUs";
-import Compines from "../Components/HomePage/Compines";
+import Compines from "../Components/HomePage/Companies";
 import { Helmet } from "react-helmet";
 
 const contactDetails = [

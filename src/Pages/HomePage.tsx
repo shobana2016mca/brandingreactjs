@@ -8,7 +8,7 @@ import WhyChooseUs from "../Components/HomePage/WhyChooseUs";
 import Testimonials from "../Components/HomePage/Testimonials";
 import ContactUs from "../Components/HomePage/ContactUs";
 import LatestNewsAndBlogs from "../Components/HomePage/LatestNewsAndBlogs";
-import Compines from "../Components/HomePage/Compines";
+import Compines from "../Components/HomePage/Companies";
 import Services from "../Components/HomePage/Services";
 import { Helmet } from "react-helmet";
 

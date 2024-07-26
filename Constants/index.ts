@@ -94,3 +94,23 @@ interface SocialMediaLinks {
   ];
 
   export const category =["keywords strategically","Seo","uncategorized"];
+
+
+  interface Companies {
+    icon: string;
+}
+
+export const Icons: Companies[] = [
+    { icon: "logoipsome-5.png" },
+    { icon: "logo-ipsome4.png" },
+    { icon: "logoipsom2.png" },
+    { icon: "logo-ipsom1.png" },
+    { icon: "logo-ipsom.png" },
+    { icon: "logoipsome-5.png" },
+    { icon: "logoipsome-5.png" },
+    { icon: "logo-ipsome4.png" },
+    { icon: "logoipsom2.png" },
+    { icon: "logo-ipsom1.png" },
+    { icon: "logo-ipsom.png" },
+    { icon: "logoipsome-5.png" },
+];

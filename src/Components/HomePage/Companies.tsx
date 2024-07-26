@@ -3,30 +3,13 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { A11y, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
+import { Icons } from "../../../Constants";
 
-interface Companies {
-    icon: string;
-}
-
-const Icons: Companies[] = [
-    { icon: "logoipsome-5.png" },
-    { icon: "logo-ipsome4.png" },
-    { icon: "logoipsom2.png" },
-    { icon: "logo-ipsom1.png" },
-    { icon: "logo-ipsom.png" },
-    { icon: "logoipsome-5.png" },
-    { icon: "logoipsome-5.png" },
-    { icon: "logo-ipsome4.png" },
-    { icon: "logoipsom2.png" },
-    { icon: "logo-ipsom1.png" },
-    { icon: "logo-ipsom.png" },
-    { icon: "logoipsome-5.png" },
-];
-
-function Compines() {
+function Companies() {
 
     return (
-        <section className="w-full mx-auto mb-5 bg-white">
+        <section className="w-full mx-auto mb-5 bg-white min-h-[100vh]">
             <div className="max-w-screen-xl pt-12 mx-auto">
                 <h1 className="mt-4 text-3xl font-bold text-center text-slate-700">
                     Trusted by Over{" "}
@@ -64,10 +47,14 @@ function Compines() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
+                    <div className="flex items-center justify-center w-full">
+                      <Link to='/companies' className="p-3 mx-auto text-white bg-orange-600 w-fit" >Explore More</Link>
+
+                    </div>
                 </div>
             </div>
         </section>
     );
 }
 
-export default Compines;
+export default Companies;

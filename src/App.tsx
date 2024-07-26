@@ -8,13 +8,14 @@ import Error404 from './Components/GlobalComponents/Error404';
 import FloatingWhatsAppButton from './Components/GlobalComponents/FloatingWhatsAppButton';
 import './fonts.css'; 
 
-// Lazy load pages
 const HomePage = lazy(() => import('./Pages/HomePage'));
 const AboutUs = lazy(() => import('./Pages/AboutUs'));
 const ContactUsPage = lazy(() => import('./Pages/ContactUsPage'));
 const ServicePage = lazy(() => import('./Pages/ServicePage'));
 const Blogspage = lazy(()=> import('./Pages/Blogs.tsx'));
 const BlogPage = lazy(()=> import('./Pages/BlogPage.tsx'))
+const CompaniesPage = lazy(()=> import('./Pages/CompaniesPage.tsx'))
+
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route path='/contact-us' element={<ContactUsPage />} />
           <Route path='/services' element={<ServicePage />} />
           <Route path='*' element={<Error404 />} /> 
+          <Route path='/companies' element={<CompaniesPage />} /> 
+
         </Routes>
       </Suspense>
       <FloatingWhatsAppButton />

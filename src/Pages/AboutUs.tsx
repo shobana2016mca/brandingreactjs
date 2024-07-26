@@ -4,7 +4,7 @@ import GenerateTraffic from '../Components/HomePage/GenerateTraffic';
 import StatusCard from '../Components/HomePage/StatusCard';
 import FindProgress from '../Components/HomePage/FindProgress';
 import ProfileCard from '../Components/AboutUs/ProfileCard'
-import Compines from '../Components/HomePage/Compines';
+import Compines from '../Components/HomePage/Companies';
 import { Helmet } from "react-helmet";
 
 
