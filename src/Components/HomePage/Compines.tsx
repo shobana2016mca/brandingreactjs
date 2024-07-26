@@ -25,7 +25,6 @@ const Icons: Companies[] = [
 ];
 
 function Compines() {
-    const { ref, isVisible } = useIntract();
 
     return (
         <section className="w-full mx-auto mb-5 bg-white">
@@ -46,6 +45,12 @@ function Compines() {
                             delay: 2000,
                             disableOnInteraction: false,
                         }}
+                        breakpoints={{
+                          220: { slidesPerView: 3 },
+                          668: { slidesPerView: 3 },
+                          1024: { slidesPerView: 4 },
+                          1524: { slidesPerView: 6 },
+                        }}
                     >
                         {Icons.map((company, index) => (
                             <SwiperSlide key={index}>
@@ -54,7 +59,7 @@ function Compines() {
                                         src={company.icon}
                                         alt="Best Companies"
                                         loading="lazy"
-                                        className={`h-auto max-w-full ${isVisible ? 'animate-popup' : ''}`}
+                                        className={`h-auto max-w-full `}
                                     />
                                 </div>
                             </SwiperSlide>
