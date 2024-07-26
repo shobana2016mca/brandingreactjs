@@ -19,7 +19,7 @@ function CompaniesPage() {
                                         src={company.icon}
                                         alt="Best Companies"
                                         loading="lazy"
-                                        className={`h-auto max-w-full transition-all duration-300 hover:scale-110 `}
+                                        className={`h-auto max-w-full transition-all duration-300 hover:scale-150`}
                                     />
                                 </div>
                         ))}
