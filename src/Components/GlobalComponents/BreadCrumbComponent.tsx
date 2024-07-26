@@ -36,6 +36,12 @@ export const BreadCrumbsList: BreadCrumbs[] = [
     description:
       "Ensuring the best return on investment for your bespoke SEO campaign requirement.",
   },
+  {
+    title: "Companies",
+    image: "No",
+    description:
+      "Trusted by Over 30000+ Companies",
+  },
 ];
 
 const BreadCrumbComponent: React.FunctionComponent<IBreadCrumbComponentProps> = () => {
