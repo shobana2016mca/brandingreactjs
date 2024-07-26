@@ -175,6 +175,6 @@ export const Icons: Companies[] = [
   { icon: "gaba.jpeg" },
   { icon: "helping.png" },
   { icon: "lcet.png" },
-  { icon: "yogasutra.png" },
+  { icon: "yogasutra.jpg" },
   { icon: "grab.jpg" },
 ];
