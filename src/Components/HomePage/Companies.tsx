@@ -9,7 +9,7 @@ import { Icons } from "../../../Constants";
 function Companies() {
 
     return (
-        <section className="w-full mx-auto mb-5 bg-white min-h-[100vh]">
+        <section className="w-full mx-auto mb-5 bg-white">
             <div className="max-w-screen-xl pt-12 mx-auto">
                 <h1 className="mt-4 text-3xl font-bold text-center text-slate-700">
                     Trusted by Over{" "}
