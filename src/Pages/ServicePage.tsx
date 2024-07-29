@@ -10,7 +10,7 @@ function ServicePage() {
     return (
         <div>
              <Helmet>
-        <title>Our Services - My Awesome Company</title>
+        <title>Our Services - Branding Solutions</title>
         <meta name="description" content="Learn about the wide range of services offered by My Awesome Company. We provide exceptional solutions to meet your needs." />
         <meta name="keywords" content="services, solutions, my awesome company" />
         <meta property="og:title" content="Our Services - My Awesome Company" />

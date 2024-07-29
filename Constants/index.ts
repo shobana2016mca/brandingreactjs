@@ -171,7 +171,7 @@ export const Icons: Companies[] = [
   { icon: "allinone.png" },
   { icon: "ektek.png" },
   { icon: "empireroyale.jpg" },
-  { icon: "event.png" },
+  { icon: "event.jpg" },
   { icon: "gaba.jpeg" },
   { icon: "helping.png" },
   { icon: "lcet.png" },
