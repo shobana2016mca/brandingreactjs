@@ -35,12 +35,12 @@ function Companies() {
           >
             {Icons.slice(0, 10).map((company, index) => (
               <SwiperSlide key={index}>
-                <div className="flex items-center justify-center p-4">
+                <div className="flex items-center justify-center p-4 w-36 h-36">
                   <img
                     src={company.icon}
                     alt="Best Companies"
                     loading="lazy"
-                    className={`h-auto max-w-full `}
+                    className={`h-auto max-w-full object-contain `}
                   />
                 </div>
               </SwiperSlide>

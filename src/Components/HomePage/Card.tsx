@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ number, title, description }) => {
 
   const { ref, isVisible } = useIntract();
   return (
-    <div ref={ref}  className={`p-4 m-1 bg-white shadow-md md:p-8 hover:border hover:border-black ${isVisible ? 'animate-fadeUp' : '  '} `}>
+    <div ref={ref}  className={`p-4 m-1 bg-white min-h-[480px] shadow-md md:p-8 hover:border hover:border-black ${isVisible ? 'animate-fadeUp' : '  '} `}>
       <div className="mb-2 ">
         <div className="flex items-center justify-center w-12 h-12 text-white bg-black rounded-full">
           {number}

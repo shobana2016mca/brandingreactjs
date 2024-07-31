@@ -108,7 +108,10 @@ return (
       </div>
 
       <div className="grid max-w-screen-xl grid-cols-1 gap-6 px-4 mx-auto mt-16 md:mt-36 md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex items-center justify-center h-64 col-span-1 p-4 mx-auto max-w-64 md:col-span-2 lg:w-auto lg:h-auto ">
+
+        <div className="relative flex items-center justify-center w-full h-full col-span-1 p-4 mx-auto md:col-span-2 lg:w-auto lg:h-auto ">
+        <img className="object-contain w-full " src='soft.png'/>
+        <div className="absolute top-1/2 left-1/2">
           <div className="relative" onClick={openVideo}>
             <FaPlay className="absolute top-[-14px] left-[-14px] z-10 text-3xl text-white" />
             <span className="absolute inset-0 flex items-center justify-center">
@@ -120,10 +123,12 @@ return (
               <span className="absolute w-40 h-40 bg-orange-600 rounded-full opacity-75 animate-pulse"></span>
             </span>
           </div>
+          </div>
+
         </div>
         {showVideo && (
           <div
-            className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 ${isVisible ? "animate-fadeUp" : "  "}  `}
+            className={`fixed inset-0 flex items-center justify-center z-20 bg-black bg-opacity-75 ${isVisible ? "animate-fadeUp" : "  "}  `}
           >
             <div className="relative z-20">
               <button
