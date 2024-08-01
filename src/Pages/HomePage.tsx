@@ -4,7 +4,7 @@ import GenerateTraffic from "../Components/HomePage/GenerateTraffic";
 import StatusCard from "../Components/HomePage/StatusCard";
 // import PricingPlans from "../Components/HomePage/PricingPlans";
 import WhyChooseUs from "../Components/HomePage/WhyChooseUs";
-// import Testimonials from "../Components/HomePage/Testimonials";
+//import Testimonials from "../Components/HomePage/Testimonials";
 import ContactUs from "../Components/HomePage/ContactUs";
 // import LatestNewsAndBlogs from "../Components/HomePage/LatestNewsAndBlogs";
 import Compines from "../Components/HomePage/Companies";
@@ -81,14 +81,14 @@ function HomePage() {
         </div>
       </section>
       <WhyChooseUs />
-      {/* <!---section----! className="bg-[#EBF1F3] w-full">
+      {/* <section className="bg-[#EBF1F3] w-full">
         <div className="max-w-screen-xl mx-auto ">
           <PricingPlans />
         </div>
-      </!---section----!> 
-      {/* <Testimonials /> */}
+      </section> */}
+      
       <ContactUs />
-      {/* <LatestNewsAndBlogs /> */}
+      
     </div>
   );
 }
