@@ -194,4 +194,10 @@ export const Icons: Companies[] = [
   { icon: "puripuri.jpg" },
   { icon: "BOMBAY-PICNIC-SPOT.jpg" },
   { icon: "tinytown.jpg" },
+  { icon: "auss.jpg" },
+  { icon: "bobfab.jpg" },
+  { icon: "cakenbake.jpeg" },
+  { icon: "friendsports.jpg" },
+  { icon: "hportho.jpg" },
+  { icon: "hrm.jpg" },
 ];

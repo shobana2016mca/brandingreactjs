@@ -1,4 +1,5 @@
 import useIntract from "../GlobalComponents/useIntract";
+import { Link } from "react-router-dom";
 
 function FindProgress() {
   const { ref, isVisible } = useIntract();
@@ -36,14 +37,20 @@ function FindProgress() {
                 goals effortlessly.
               </p>
               <div className="flex items-center justify-center mt-8">
-                <input
+                {/* <input
                   type="text"
                   placeholder="Enter Web URL"
                   className="w-full max-w-xs px-4 py-2 text-black bg-white md:max-w-md lg:max-w-lg xl:max-w-xl focus:outline-none"
-                />
-                <button className="max-w-full px-4 py-3 text-sm text-white bg-orange-600 focus:outline-none">
+                /> */}
+                {/* <button className="max-w-full px-4 py-3 text-sm text-white bg-orange-600 focus:outline-none">
                   Analyze
-                </button>
+                </button> */}
+                <Link
+                  to="/AboutUs"
+                  className="p-3 mx-auto text-white bg-orange-600 w-fit"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>

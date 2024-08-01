@@ -94,12 +94,12 @@ function Services() {
               </h1>
             </div>
           </div>
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <p className="text-lg text-slate-700">
               we provide unparalleled value to help your business thrive. Our
               benefits include:
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid max-w-screen-xl grid-cols-1 gap-6 px-4 mx-auto mt-16 md:mt-36 md:grid-cols-2 lg:grid-cols-3">
