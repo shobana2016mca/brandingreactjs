@@ -2,11 +2,11 @@ import HeroSection from "../Components/HomePage/HeroSection";
 import FindProgress from "../Components/HomePage/FindProgress";
 import GenerateTraffic from "../Components/HomePage/GenerateTraffic";
 import StatusCard from "../Components/HomePage/StatusCard";
-
+// import PricingPlans from "../Components/HomePage/PricingPlans";
 import WhyChooseUs from "../Components/HomePage/WhyChooseUs";
-
+// import Testimonials from "../Components/HomePage/Testimonials";
 import ContactUs from "../Components/HomePage/ContactUs";
-
+// import LatestNewsAndBlogs from "../Components/HomePage/LatestNewsAndBlogs";
 import Compines from "../Components/HomePage/Companies";
 import Services from "../Components/HomePage/Services";
 import { Helmet } from "react-helmet";
@@ -81,7 +81,14 @@ function HomePage() {
         </div>
       </section>
       <WhyChooseUs />
+      {/* <section className="bg-[#EBF1F3] w-full">
+        <div className="max-w-screen-xl mx-auto ">
+          <PricingPlans />
+        </div>
+      </section>
+      <Testimonials />
       
+      <LatestNewsAndBlogs /> */}
       <ContactUs />
     </div>
   );
