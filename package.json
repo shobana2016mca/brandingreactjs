@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "generate-sitemap": "node generate-sitemap.js",
-    "prebuild": "npm run generate-sitemap",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "dev": "vite",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -31,7 +29,6 @@
     "react-lazyload": "^3.2.1",
     "react-router-dom": "^6.24.0",
     "react-slideshow-image": "^4.3.1",
-    "sitemap": "^8.0.0",
     "swiper": "^11.1.5"
   },
   "devDependencies": {
