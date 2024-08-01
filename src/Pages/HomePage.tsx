@@ -81,14 +81,14 @@ function HomePage() {
         </div>
       </section>
       <WhyChooseUs />
-      <section className="bg-[#EBF1F3] w-full">
+      {/* <section className="bg-[#EBF1F3] w-full">
         <div className="max-w-screen-xl mx-auto ">
           <PricingPlans />
         </div>
-      </section>
-      <Testimonials />
+      </section> */}
+      {/* <Testimonials /> */}
       <ContactUs />
-      <LatestNewsAndBlogs />
+      {/* <LatestNewsAndBlogs /> */}
     </div>
   );
 }
