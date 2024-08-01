@@ -11,8 +11,8 @@ function Companies() {
     <section className="w-full mx-auto mb-5 bg-white">
       <div className="max-w-screen-xl pt-12 mx-auto">
         <h1 className="mt-4 text-3xl font-bold text-center text-slate-700">
-          Trusted by Over{" "}
-          <span className="text-3xl text-orange-600">30000+</span> Companies
+          Trusted by Over <span className="text-3xl text-orange-600">500+</span>{" "}
+          Companies
         </h1>
         <div className="">
           <Swiper
