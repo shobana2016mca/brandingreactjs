@@ -219,9 +219,9 @@ export const Icons: Companies[] = [
   { icon: "label.jpg" },
   { icon: "laksya.jpg" },
   { icon: "malhotra.jpg" },
-  { icon: "phoneix.jpg" },
+  { icon: "phoneix.png" },
   { icon: "polk.jpg" },
-  { icon: "skm.jpg" },
-  { icon: "skc.jpg" },
+  { icon: "skm.png" },
+  { icon: "smc.jpg" },
   
 ];
