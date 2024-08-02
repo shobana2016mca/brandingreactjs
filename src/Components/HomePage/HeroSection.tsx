@@ -5,40 +5,40 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { A11y, Autoplay } from "swiper/modules";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { Swiper as SwiperInstance } from 'swiper';
+import { Swiper as SwiperInstance } from "swiper";
 import { Link } from "react-router-dom";
 
 const slides = [
   {
     image: "/banner.jpg",
     title: "Increase Your Web Traffic with Expert Team",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.",
-    link: "#"
+    description: "",
+    link: "#",
   },
   {
     image: "WhatsApp Image 2024-07-18 at 11.19.56_75206e04.jpg",
     title: "Increase Your Web Traffic with Expert Team",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.",
-    link: "#"
+    description: "",
+    link: "#",
   },
   {
     image: "WhatsApp Image 2024-07-18 at 11.19.55_7897f9d3.jpg",
     title: "Increase Your Web Traffic with Expert Team",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.",
-    link: "#"
+    description: "",
+    link: "#",
   },
   {
     image: "WhatsApp Image 2024-07-18 at 11.19.55_5898db78.jpg",
     title: "Increase Your Web Traffic with Expert Team",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.",
-    link: "#"
+    description: "",
+    link: "#",
   },
   {
     image: "WhatsApp Image 2024-07-18 at 11.19.55_79fc31d5.jpg",
     title: "Increase Your Web Traffic with Expert Team",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.",
-    link: "#"
-  }
+    description: "",
+    link: "#",
+  },
 ];
 
 const HeroSection: React.FC = () => {
@@ -87,7 +87,10 @@ const HeroSection: React.FC = () => {
                   <p className="text-white pl-2 md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
                     {slide.description}
                   </p>
-                  <Link to={slide.link} className="px-3 py-2 pl-2 mt-1 mr-3 text-white bg-orange-600 w-fit">
+                  <Link
+                    to={slide.link}
+                    className="px-3 py-2 pl-2 mt-1 mr-3 text-white bg-orange-600 w-fit"
+                  >
                     Get Started
                   </Link>
                 </section>
