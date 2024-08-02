@@ -1,5 +1,5 @@
-import emailjs from '@emailjs/browser';
-import React, { useRef } from 'react';
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 
 interface IAppProps {}
 
@@ -10,7 +10,7 @@ const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
   const publicId = import.meta.env.VITE_EMAILJS_PUBLIC_ID;
 
   if (!serviceId || !templateId || !publicId) {
-    throw new Error('EmailJS not configured');
+    throw new Error("EmailJS not configured");
   }
 
   async function sendEmail(e: React.FormEvent) {
@@ -29,25 +29,66 @@ const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
         console.log(result);
 
         if (result.status === 200) {
-          alert('Message sent successfully');
+          alert("Message sent successfully");
         }
       } catch (error) {
         console.log(error);
-        alert('Failed to send message');
+        alert("Failed to send message");
       }
     }
   }
 
   return (
-    <div>
+    <div className="flex flex-col items-center max-md:bg-black-white md:bg-[#f3f3f4] xl:bg-white-gray-white p-2">
       <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type='text' name='user_name' />
-        <label>Email</label>
-        <input type='email' name='user_email' />
-        <label>Message</label>
-        <textarea name='message' />
-        <input type='submit' value='Send' className={'bg-white'} />
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Name"
+            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
+          />
+
+          <input
+            type="number"
+            placeholder="Phone number"
+            name="user_email"
+            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
+          />
+        </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <input
+            type="email"
+            name="user_name"
+            placeholder="email"
+            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
+          />
+
+          <input
+            type="text"
+            placeholder="job decription"
+            name="user_email"
+            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
+          />
+        </div>
+
+        <textarea
+          name="message"
+          placeholder="Message"
+          className="h-32 w-[96%] col-span-1 p-2 m-2 text-black md:mt-4 md:col-span-2 focus:outline-none"
+        />
+        <button
+          type="submit"
+          value="Send"
+          className="px-4 py-2 mt-4 text-white bg-orange-600 md:mt-4 hover:bg-black-700"
+        >
+          Send Message
+        </button>
+        {/* <button
+             type='submit'
+             className='px-4 py-2 mt-4 text-white bg-orange-600 md:mt-4 hover:bg-orange-700'>
+             Send Message
+           </button> */}
       </form>
     </div>
     // <div
@@ -71,7 +112,7 @@ const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
     //           Send us a Message
     //         </h1>
     //       </div>
-    //       <form className='space-y-4' onSubmit={handleSubmit}>
+    //       <form className='space-y-4' onSubmit={handleSubmit} ref={form} onSubmit={sendEmail}>
     //         <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
     //           <input
     //             type='text'

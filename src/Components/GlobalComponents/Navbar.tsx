@@ -67,10 +67,10 @@ export default function Navbar() {
   return (
     <header className="relative z-10 mx-auto bg-white shadow max-w-screen-2xl lg:bg-transparent ">
       <div className="w-full py-4 mx-auto bg-white lg:flex lg:justify-between lg:items-center">
-        <div className="flex items-center justify-between px-6">
+        <div className="flex items-center justify-between px-10">
           <Link to="/">
             <img
-              className="w-auto h-12 "
+              className="w-full h-16"
               width="auto"
               height="auto"
               loading="lazy"
@@ -78,6 +78,7 @@ export default function Navbar() {
               alt="branding Logo"
             />
           </Link>
+
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
@@ -118,7 +119,24 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-
+        <div className="flex items-center justify-between px-6">
+          <p className="font-bold text-orange-500">
+            <a
+              href="mailto:info@brandingsolutions.in"
+              className="pr-16 text-orange text-font-bold max-md:mt-3 max-md:ml-3 "
+            >
+              info@brandingsolutions.in
+            </a>
+          </p>
+          <p className="font-bold text-orange-500">
+            <a
+              href="tel:+919056353599"
+              className="pr-16 text-orange text-font-bold max-md:mt-3 max-md:ml-3 "
+            >
+              91-9056353599
+            </a>
+          </p>
+        </div>
         <nav
           className={`fixed inset-0 z-50 transition-transform transform bg-white  lg:bg-transparent lg:relative lg:translate-x-0 ${
             isOpen ? "translate-x-0" : "-translate-x-full"

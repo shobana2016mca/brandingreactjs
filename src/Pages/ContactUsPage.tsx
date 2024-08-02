@@ -72,12 +72,12 @@ function ContactUsPage() {
         <link rel="canonical" href="http://www.myawesomecompany.com/contact" />
       </Helmet>
       <BreadCrumbComponent />
-      <section className="max-w-screen-xl mx-auto ">
+      <section className="max-w-screen-xl mx-auto p-8">
         <CenterHeader
           heading="CONTACT INFORMATION"
           subHeading="Get In Touch With Us"
         />
-        <div className="grid grid-cols-1 gap-3 mt-16 md:mt-32 lg:grid-cols-3 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-3 mt-10 md:mt-20 lg:grid-cols-3 md:grid-cols-2">
           {contactDetails.map((detail, index) => (
             <ContactCard
               key={index}

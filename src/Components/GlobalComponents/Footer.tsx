@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaLocationArrow } from "react-icons/fa6";
+// import { FaLocationArrow } from "react-icons/fa6";
 import useIntract from "../GlobalComponents/useIntract";
 
 interface SocialMediaLink {
@@ -37,8 +37,7 @@ interface FooterData {
 
 const footerData: FooterData = {
   logo: "BS-logo.png",
-  description:
-    "At Branding Solutions, we are dedicated to elevating your brands identity and visibility in the digital landscape. With a team of creative experts and industry veterans, we offer comprehensive branding services including logo design, website development, digital marketing, and SEO",
+  description: " ",
   socialMedia: [
     { href: "#", icon: <FaFacebookF />, label: "Facebook" },
     { href: "#", icon: <FaTwitter />, label: "Twitter" },
@@ -65,20 +64,23 @@ const Footer: React.FC = () => {
   return (
     <footer className="py-8 bg-[#EBF1F3]" ref={ref}>
       <div className="max-w-screen-xl p-4 mx-auto sm:p-6 lg:p-8">
-        <div className="flex justify-center md:justify-start">
+        {/* <div className="flex justify-center md:justify-start">
           <img
             src={`/${footerData.logo}`}
             loading="lazy"
             alt="branding"
             className="h-10 "
           />
-        </div>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        </div> */}
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="text-center md:text-left">
-            <p className="mt-4 text-sm text-gray-600 md:text-base lg:text-lg">
-              {footerData.description}
-            </p>
-            <div className="flex justify-center mt-4 space-x-4 md:justify-start">
+            <img
+              src={`/${footerData.logo}`}
+              loading="lazy"
+              alt="branding"
+              className="h-10 width-full"
+            />
+            {/* <div className="flex justify-center mt-4 space-x-4 md:justify-start">
               {footerData.socialMedia.map((social, index) => (
                 <a
                   key={index}
@@ -89,7 +91,7 @@ const Footer: React.FC = () => {
                   {social.icon}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           <div className="flex gap-4 text-center md:text-left max-lg:block">
@@ -139,7 +141,7 @@ const Footer: React.FC = () => {
 
           <div className="text-center md:text-left">
             <div className="mt-4">
-              <form className="flex">
+              {/* <form className="flex">
                 <input
                   type="email"
                   placeholder="Enter Email"
@@ -153,13 +155,13 @@ const Footer: React.FC = () => {
                     <FaLocationArrow className="text-white " />
                   </span>
                 </button>
-              </form>
-              <div className="mt-2 text-left ">
+              </form> */}
+              {/* <div className="mt-2 text-left ">
                 <label className="flex text-sm text-gray-600 md:text-base lg:text-lg">
                   <FaRegSquare className="mt-1 mr-2 text-xs text-orange-600 " />
                   <p>Sign up for emails</p>
                 </label>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

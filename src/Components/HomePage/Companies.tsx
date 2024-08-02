@@ -11,8 +11,8 @@ function Companies() {
     <section className="w-full mx-auto mb-5 bg-white">
       <div className="max-w-screen-xl pt-12 mx-auto">
         <h1 className="mt-4 text-3xl font-bold text-center text-slate-700">
-          Trusted by Over <span className="text-3xl text-orange-600">500+</span>{" "}
-          Companies
+          <span className="text-3xl text-orange-600">150+</span> Plus
+          Clients.....
         </h1>
         <div className="">
           <Swiper
@@ -51,7 +51,7 @@ function Companies() {
               to="/companies"
               className="p-3 mx-auto text-white bg-orange-600 w-fit"
             >
-              Explore More
+              View More
             </Link>
           </div>
         </div>

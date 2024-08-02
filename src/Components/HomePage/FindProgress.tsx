@@ -46,7 +46,7 @@ function FindProgress() {
                   Analyze
                 </button> */}
                 <Link
-                  to="/AboutUs"
+                  to="/about-us"
                   className="p-3 mx-auto text-white bg-orange-600 w-fit"
                 >
                   Read More

@@ -104,7 +104,7 @@ function Services() {
 
         <div className="grid max-w-screen-xl grid-cols-1 gap-6 px-4 mx-auto mt-16 md:mt-36 md:grid-cols-2 lg:grid-cols-3">
           <div className="relative flex items-center justify-center w-full h-full col-span-1 p-4 mx-auto md:col-span-2 lg:w-auto lg:h-auto ">
-            <img className="object-contain w-full " src="soft.png" />
+            <img className="object-contain w-full " src="websitedesign.png" />
             <div className="absolute top-1/2 left-1/2">
               <div className="relative" onClick={openVideo}>
                 <FaPlay className="absolute top-[-14px] left-[-14px] z-10 text-3xl text-white" />
