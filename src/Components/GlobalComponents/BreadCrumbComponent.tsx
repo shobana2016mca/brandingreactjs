@@ -72,7 +72,7 @@ const BreadCrumbComponent: React.FunctionComponent<
 
   return (
     <div
-      className="bg-[#19191F] flex flex-col lg:h-[550px] items-center justify-center w-full"
+      className="bg-[#19191F] flex flex-col lg:h-[420px] items-center justify-center w-full"
       ref={ref}
     >
       <div
