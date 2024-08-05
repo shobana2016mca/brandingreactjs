@@ -30,7 +30,16 @@ const AboutUs: React.FunctionComponent<IAppProps> = () => {
         />
         <meta
           name="keywords"
-          content="about us, company, mission, vision, values, services"
+          content="Website Designing ,
+Web Designing ,
+Web Designing in Jalandhar, 
+Web Designing in Ludhiana ,
+Web Designing in Chandigarh, 
+Web Designing in Amritsar ,
+Web Designing in Bathinda,
+Web Designing in Moga,
+Best web designing ,
+Web Designing in Punjab"
         />
         <meta property="og:title" content="About Us - Branding Solutions" />
         <meta

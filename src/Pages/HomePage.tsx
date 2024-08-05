@@ -33,7 +33,16 @@ function HomePage() {
         />
         <meta
           name="keywords"
-          content="home, awesome company, products, services"
+          content="Website Designing ,
+Web Designing ,
+Web Designing in Jalandhar, 
+Web Designing in Ludhiana ,
+Web Designing in Chandigarh, 
+Web Designing in Amritsar ,
+Web Designing in Bathinda,
+Web Designing in Moga,
+Best web designing ,
+Web Designing in Punjab"
         />
         <meta property="og:title" content="Welcome to Branding Solutions" />
         <meta

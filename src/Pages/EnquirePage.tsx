@@ -41,7 +41,16 @@ export default function EnquirePage() {
         />
         <meta
           name="keywords"
-          content="contact us, customer service, support, Branding company"
+          content="Website Designing ,
+Web Designing ,
+Web Designing in Jalandhar, 
+Web Designing in Ludhiana ,
+Web Designing in Chandigarh, 
+Web Designing in Amritsar ,
+Web Designing in Bathinda,
+Web Designing in Moga,
+Best web designing ,
+Web Designing in Punjab"
         />
         <meta property="og:title" content="Contact Us - My Awesome Company" />
         <meta

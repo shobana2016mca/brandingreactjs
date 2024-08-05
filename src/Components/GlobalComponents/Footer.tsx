@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
             className="h-10 "
           />
         </div> */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="text-center md:text-left">
             <img
               src={`/${footerData.logo}`}
@@ -81,6 +81,9 @@ const Footer: React.FC = () => {
               alt="branding"
               className="h-10 width-full"
             />
+            <p className="text-sm text-gray-600 md:text-base lg:text-lg pt-6 ">
+              {footerData.description}
+            </p>
             {/* <div className="flex justify-center mt-4 space-x-4 md:justify-start">
               {footerData.socialMedia.map((social, index) => (
                 <a
@@ -157,12 +160,20 @@ const Footer: React.FC = () => {
                   </span>
                 </button>
               </form> */}
-              {/* <div className="mt-2 text-left ">
-                <label className="flex text-sm text-gray-600 md:text-base lg:text-lg">
+              <div className="mt-2 text-left ">
+                {/* <label className="flex text-sm text-gray-600 md:text-base lg:text-lg">
                   <FaRegSquare className="mt-1 mr-2 text-xs text-orange-600 " />
                   <p>Sign up for emails</p>
-                </label>
-              </div> */}
+                </label> */}
+                <iframe
+                  title={"Google Maps"}
+                  id="map-canvas"
+                  className=""
+                  width="100%"
+                  height="100%"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3409.7049800394416!2d75.56941737560214!3d31.28425477432292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDE3JzAzLjMiTiA3NcKwMzQnMTkuMiJF!5e0!3m2!1sen!2sin!4v1721834089968!5m2!1sen!2sin"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
