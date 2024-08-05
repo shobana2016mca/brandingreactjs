@@ -6,7 +6,7 @@ const FloatingWhatsAppButton: React.FC = () => {
     <div>
       <FloatingWhatsApp
         phoneNumber="919056353599"
-        accountName="Teja Chennu"
+        accountName="Branding solutions"
         avatar="/whatsapp-logo.jpg"
         statusMessage="Typically replies within a few hours"
         chatMessage="Hello, how can we help you?"
