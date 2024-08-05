@@ -37,7 +37,8 @@ interface FooterData {
 
 const footerData: FooterData = {
   logo: "BS-logo.png",
-  description: " ",
+  description:
+    "At Branding Solutions, we are dedicated to elevating your brand's identity and visibility in the digital landscape. With a team of creative experts and industry veterans, we offer comprehensive branding services including logo design, website development, digital marketing, and SEO.",
   socialMedia: [
     { href: "#", icon: <FaFacebookF />, label: "Facebook" },
     { href: "#", icon: <FaTwitter />, label: "Twitter" },

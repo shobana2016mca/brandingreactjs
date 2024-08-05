@@ -16,7 +16,7 @@ const slides = [
     link: "#",
   },
   {
-    image: "WhatsApp Image 2024-07-18 at 11.19.56_75206e04.jpg",
+    image: "banner4.jpg",
     title: "Transform Your Brand with Our Expert Solutions",
     description: "",
     link: "#",
