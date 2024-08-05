@@ -42,7 +42,9 @@ Web Designing in Amritsar ,
 Web Designing in Bathinda,
 Web Designing in Moga,
 Best web designing ,
-Web Designing in Punjab"
+Web Designing in Punjab,Facebook Ads in Jalandhar ,
+Facebook Ads in Ludhiana,
+Facebook Ads in Punjab"
         />
         <meta property="og:title" content="Welcome to Branding Solutions" />
         <meta
@@ -50,7 +52,7 @@ Web Designing in Punjab"
           content="Discover the amazing products and services offered by Welcome to Branding Solutions. We are committed to excellence and customer satisfaction."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://www.myawesomecompany.com" />
+        <meta property="og:url" content="http://www.brandingsolutions.in" />
         <meta
           property="og:image"
           content="http://www.myawesomecompany.com/home-image.jpg"
