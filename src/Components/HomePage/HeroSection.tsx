@@ -29,7 +29,7 @@ const slides = [
   },
   {
     image: "WhatsApp Image 2024-07-18 at 11.19.55_5898db78.jpg",
-    title: "Transform Your Call Center with Our Expert Branding Solutions",
+    title: "Radio Ads",
     description: "",
     link: "#",
   },

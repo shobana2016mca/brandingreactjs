@@ -52,7 +52,7 @@ function Services() {
     },
     {
       number: "5",
-      title: "branding Awareness",
+      title: "Branding Awareness",
       description:
         "Boost your brand's visibility with our comprehensive branding awareness services. At Branding Solutions, we specialize in creating impactful marketing strategies, engaging content, and eye-catching designs that resonate with your target audience. Elevate your brand recognition and stand out in a crowded market with our expert solutions.",
     },
