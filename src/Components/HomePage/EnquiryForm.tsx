@@ -41,7 +41,7 @@ const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
   return (
     <div className="flex flex-col items-center max-md:bg-black-white md:bg-[#f3f3f4] xl:bg-white-gray-white p-2">
       <form ref={form} onSubmit={sendEmail}>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-5">
           <input
             type="text"
             name="user_name"
@@ -55,8 +55,27 @@ const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
             name="user_email"
             className="p-3 m-2 text-black md:mt-4 focus:outline-none"
           />
+          <input
+            type="text"
+            placeholder="email"
+            name="user_email"
+            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
+          />
+          <input
+            type="text"
+            placeholder="message"
+            name="user_email"
+            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
+          />
+          <button
+            type="submit"
+            value="Send"
+            className="px-2 py-2 mt-2 text-white bg-orange-600 hover:bg-black-700"
+          >
+            Send Message
+          </button>
         </div>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <input
             type="email"
             name="user_name"
@@ -70,9 +89,9 @@ const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
             name="user_email"
             className="p-3 m-2 text-black md:mt-4 focus:outline-none"
           />
-        </div>
+        </div> */}
 
-        <textarea
+        {/* <textarea
           name="message"
           placeholder="Message"
           className="h-32 w-[96%] col-span-1 p-2 m-2 text-black md:mt-4 md:col-span-2 focus:outline-none"
@@ -83,7 +102,7 @@ const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
           className="px-4 py-2 mt-4 text-white bg-orange-600 md:mt-4 hover:bg-black-700"
         >
           Send Message
-        </button>
+        </button> */}
         {/* <button
              type='submit'
              className='px-4 py-2 mt-4 text-white bg-orange-600 md:mt-4 hover:bg-orange-700'>

@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -64,6 +65,7 @@ const Footer: React.FC = () => {
   const { ref, isVisible } = useIntract();
   return (
     <footer className="py-8 bg-[#EBF1F3]" ref={ref}>
+    
       <div className="max-w-screen-xl p-4 mx-auto sm:p-6 lg:p-8">
         {/* <div className="flex justify-center md:justify-start">
           <img
