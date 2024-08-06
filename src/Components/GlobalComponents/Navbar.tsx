@@ -205,7 +205,7 @@ export default function Navbar() {
             ))}
             <Link
               to="/enquiry"
-              className="p-2 text-white bg-orange-600 max-md:mt-3 max-md:ml-3 "
+              className="p-2 text-white bg-orange-600 max-md:mt-3 max-md:ml-3 animate-bounce"
             >
               Enquiry Us
             </Link>
