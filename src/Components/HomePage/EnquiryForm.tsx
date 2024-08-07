@@ -65,7 +65,7 @@ const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
             type="text"
             placeholder="message"
             name="user_email"
-            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
+            className="p-4 m-2 text-black md:mt-4 focus:outline-none"
           />
           <button
             type="submit"
