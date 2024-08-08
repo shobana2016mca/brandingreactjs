@@ -15,7 +15,7 @@ function BlogPage() {
   useEffect(() => {
     if (id !== currentId) {
       setCurrentId(id);
-      setBlog(newsBlogs.filter((e) => e.id.toString() == id));
+      setBlog(newsBlogs.filter((e) => e.id.toString() === id));
     }
   }, [id, currentId]);
 
