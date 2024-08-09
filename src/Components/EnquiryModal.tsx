@@ -1,5 +1,5 @@
-import Modal from 'react-responsive-modal';
-import EnquiryForm from './HomePage/EnquiryForm';
+// import Modal from 'react-responsive-modal';
+// import EnquiryForm from './HomePage/EnquiryForm';
 
 // type EnquiryModalProps = {
 //   isOpen: boolean;

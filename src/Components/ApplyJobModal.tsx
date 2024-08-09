@@ -1,5 +1,5 @@
-import { useRef } from 'react';
-import Modal from 'react-responsive-modal';
+// import { useRef } from 'react';
+// import Modal from 'react-responsive-modal';
 
 // type ApplyJobModalProps = {
 //   isOpen: boolean;
