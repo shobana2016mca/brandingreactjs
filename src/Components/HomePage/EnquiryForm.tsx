@@ -1,16 +1,19 @@
-import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 
-interface IAppProps {}
+interface IAppProps {
+  // props go here
+  onToggle: () => void;
+}
 
-const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
+const EnquiryForm: React.FunctionComponent<IAppProps> = ({ onToggle }) => {
   const form = useRef<HTMLFormElement>(null);
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicId = import.meta.env.VITE_EMAILJS_PUBLIC_ID;
 
   if (!serviceId || !templateId || !publicId) {
-    throw new Error("EmailJS not configured");
+    throw new Error('EmailJS not configured');
   }
 
   async function sendEmail(e: React.FormEvent) {
@@ -29,49 +32,64 @@ const EnquiryForm: React.FunctionComponent<IAppProps> = () => {
         console.log(result);
 
         if (result.status === 200) {
-          alert("Message sent successfully");
+          alert('Message sent successfully');
         }
+        onToggle();
       } catch (error) {
         console.log(error);
-        alert("Failed to send message");
+        alert('Failed to send message');
       }
     }
   }
 
   return (
-    <div className="flex flex-col items-center max-md:bg-black-white md:bg-[#f3f3f4] xl:bg-white-gray-white p-2">
-      <form ref={form} onSubmit={sendEmail}>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-5">
-          <input
-            type="text"
-            name="user_name"
-            placeholder="Name"
-            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
-          />
+    <div className='flex flex-col items-center max-md:bg-black-white md:bg-[#f3f3f4] xl:bg-white-gray-white p-2'>
+      <form ref={form} onSubmit={sendEmail} className={'w-full'}>
+        <div className='grid grid-cols-1 gap-4'>
+          <div className={'w-full'}>
+            <input
+              type='text'
+              name='user_name'
+              placeholder='Name'
+              className='w-full p-3 m-2 text-black md:mt-4 focus:outline-none'
+              required
+            />
+          </div>
 
-          <input
-            type="number"
-            placeholder="Phone number"
-            name="user_email"
-            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
-          />
-          <input
-            type="text"
-            placeholder="email"
-            name="user_email"
-            className="p-3 m-2 text-black md:mt-4 focus:outline-none"
-          />
-          <input
-            type="text"
-            placeholder="message"
-            name="user_email"
-            className="p-4 m-2 text-black md:mt-4 focus:outline-none"
-          />
+          <div className={'w-full'}>
+            <input
+              type='number'
+              placeholder='Phone number'
+              name='user_email'
+              className='w-full p-3 m-2 text-black md:mt-4 focus:outline-none'
+              required
+            />
+          </div>
+
+          <div className={'w-full'}>
+            <input
+              type='text'
+              placeholder='email'
+              name='user_email'
+              className='w-full p-3 m-2 text-black md:mt-4 focus:outline-none'
+              required
+            />
+          </div>
+
+          <div className={'w-full'}>
+            <input
+              type='text'
+              placeholder='message'
+              name='user_email'
+              className='w-full p-4 m-2 text-black md:mt-4 focus:outline-none'
+              required
+            />
+          </div>
+
           <button
-            type="submit"
-            value="Send"
-            className="px-2 py-2 mt-2 text-white bg-orange-600 hover:bg-black-700"
-          >
+            type='submit'
+            value='Send'
+            className='px-2 py-2 mt-2 text-white bg-orange-600 hover:bg-black-700'>
             Send Message
           </button>
         </div>
