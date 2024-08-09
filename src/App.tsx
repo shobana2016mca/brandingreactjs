@@ -1,4 +1,5 @@
 import { Suspense, lazy } from "react";
+import 'react-responsive-modal/styles.css';
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./Components/GlobalComponents/Footer";

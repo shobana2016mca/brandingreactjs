@@ -11,7 +11,6 @@ import Compines from "../Components/HomePage/Companies";
 import Services from "../Components/HomePage/Services";
 
 import { Helmet } from "react-helmet";
-import EnquiryForm from "../Components/HomePage/EnquiryForm";
 
 function HomePage() {
   const stats = [
@@ -72,7 +71,6 @@ Facebook Ads in Punjab"
         />
         <link rel="canonical" href="http://www.myawesomecompany.com" />
       </Helmet>
-<EnquiryForm/>
       <HeroSection />
       <Compines />
       <Services />
