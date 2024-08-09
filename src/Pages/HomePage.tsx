@@ -26,7 +26,7 @@ function HomePage() {
 
   return (
     <div className=''>
-      {/* <Helmet>
+      <Helmet>
         <title>Branding Solutions</title>
         <meta
           name='description'
@@ -70,7 +70,7 @@ Facebook Ads in Punjab'
           content='http://www.myawesomecompany.com/home-image.jpg'
         />
         <link rel='canonical' href='http://www.myawesomecompany.com' />
-      </Helmet> */}
+      </Helmet>
       <HeroSection />
       <Compines />
       <Services />
