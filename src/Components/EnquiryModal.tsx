@@ -1,5 +1,5 @@
 import Modal from 'react-responsive-modal';
-// import EnquiryForm from './HomePage/EnquiryForm';
+import EnquiryForm from './HomePage/EnquiryForm';
 
 type EnquiryModalProps = {
   isOpen: boolean;
@@ -22,7 +22,7 @@ export default function EnquiryModal({
         }}>
         <h2 className={'text-3xl font-bold'}>Enquiry Form</h2>
 
-        {/* <EnquiryForm onToggle={onToogleEnquiryModal} /> */}
+        <EnquiryForm onToggle={onToogleEnquiryModal} />
       </Modal>
     </div>
   );
