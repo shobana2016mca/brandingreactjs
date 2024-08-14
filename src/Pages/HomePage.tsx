@@ -77,7 +77,7 @@ Facebook Ads in Punjab"
       <div className="flex justify-center items-center h-full">
         <div className="w-2/5 h-full">
           <h2 className="text-2xl font-bold mb-4 text-center">Enquiry Form</h2>
-          <EnquiryForm />
+          <EnquiryForm/>
         </div>
       </div>
       <Compines />

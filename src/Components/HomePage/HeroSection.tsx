@@ -10,33 +10,33 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
+    id: 0,
     image: "/banner.jpg",
     title: "Increase Your Web Traffic with Expert Team",
-    description: "",
     link: "#",
   },
   {
+    id: 1,
     image: "banner4.jpg",
     title: "Transform Your Brand with Our Expert Solutions",
-    description: "",
     link: "#",
   },
   {
+    id: 2,
     image: "WhatsApp Image 2024-07-18 at 11.19.55_7897f9d3.jpg",
     title: "",
-    description: "",
     link: "#",
   },
   {
+    id: 3,
     image: "WhatsApp Image 2024-07-18 at 11.19.55_5898db78.jpg",
     title: "Radio Ads",
-    description: "",
     link: "#",
   },
   {
+    id: 4,
     image: "digital.jpg",
     title: "Transform Your Brand Identity with Our Expert Solutions!",
-    description: "",
     link: "#",
   },
 ];
@@ -53,6 +53,32 @@ const HeroSection: React.FC = () => {
   const prevSlide = () => {
     if (swiperRef.current) {
       swiperRef.current.slidePrev();
+    }
+  };
+
+  const getStyles = (id: Number) => {
+    if (id === 1) {
+      return "mt-[50%] lg:ml-[40%] lg:mt-[48%] lg:w-[40%]";
+    } else if (id === 2) {
+      return "ml-[48%] lg:ml-[14.5%]";
+    } else if (id === 3) {
+      return "ml-[48%] lg:ml-[48%] lg:mt-[36%]";
+    } else if (id === 4) {
+      return "lg:ml-[8%] xl:ml-[5%] lg:mt-[10%]";
+    } else {
+      return "";
+    }
+  };
+
+  const getHeadingStyles = (id: Number) => {
+    if (id === 1) {
+      return "lg:text-[44px] md:w-[75%]";
+    } else if (id === 3) {
+      return "md:w-full";
+    } else if (id === 4) {
+      return "lg:text-[44px] md:w-[40%]";
+    } else {
+      return "";
     }
   };
 
@@ -80,13 +106,14 @@ const HeroSection: React.FC = () => {
                 alt={`Slide ${index + 1}`}
               />
               <div className="absolute inset-0 flex items-center justify-start bg-black bg-opacity-20">
-                <section className="flex flex-col justify-center m-4 lg:ml-36">
-                  <h1 className="mb-4 text-2xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl">
+                <section
+                  className={`flex flex-col justify-center m-4 lg:ml-36 ${getStyles(slide.id)}`}
+                >
+                  <h1
+                    className={`mb-4 text-2xl max-md:mt-4 md:w-[50%] font-bold text-left text-white transition-opacity duration-1000 transform md:text-5xl lg:text-7xl ${getHeadingStyles(slide.id)}`}
+                  >
                     {slide.title}
                   </h1>
-                  <p className="text-white pl-2 md:mb-6 max-sm:text-sm md:w-[50%] animate-fade-up">
-                    {slide.description}
-                  </p>
                   <Link
                     to={slide.link}
                     className="px-3 py-2 pl-2 mt-1 mr-3 text-white bg-orange-600 w-fit"
