@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
-// import 'react-responsive-modal/styles.css';
-import { Route, Routes } from "react-router-dom";
+import 'react-responsive-modal/styles.css';
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Error404 from "./Components/GlobalComponents/Error404";
 import FloatingWhatsAppButton from "./Components/GlobalComponents/FloatingWhatsAppButton";

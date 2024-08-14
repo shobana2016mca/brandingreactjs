@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-// import ApplyJobModal from '../ApplyJobModal';
-// import EnquiryModal from '../EnquiryModal';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import ApplyJobModal from '../ApplyJobModal';
+import EnquiryModal from '../EnquiryModal';
 interface SubMenuItem {
   title: string;
   href: string;
@@ -22,21 +22,21 @@ export default function Navbar() {
 
   const menuItems: MenuItem[] = [
     {
-      title: "Home",
-      href: "/",
+      title: 'Home',
+      href: '/',
     },
 
     {
-      title: "About",
-      href: "/about-us",
+      title: 'About',
+      href: '/about-us',
     },
     {
-      title: "Contact",
-      href: "/contact-us",
+      title: 'Contact',
+      href: '/contact-us',
     },
     {
-      title: "Services",
-      href: "/services",
+      title: 'Services',
+      href: '/services',
     },
 
     // {
@@ -78,128 +78,117 @@ export default function Navbar() {
   }
 
   return (
-    <header className="relative z-10 mx-auto bg-white shadow max-w-screen-2xl lg:bg-transparent ">
-      <div className="w-full py-4 mx-auto bg-white lg:flex lg:justify-between lg:items-center">
-        <div className="flex items-center justify-between px-10">
-          <Link to="/">
+    <header className='relative z-10 mx-auto bg-white shadow max-w-screen-2xl lg:bg-transparent '>
+      <div className='w-full py-4 mx-auto bg-white lg:flex lg:justify-between lg:items-center'>
+        <div className='flex items-center justify-between px-10'>
+          <Link to='/'>
             <img
-              className="w-full h-16"
-              width="auto"
-              height="auto"
-              loading="lazy"
-              src="/BS-logo.png"
-              alt="branding Logo"
+              className='w-full h-16'
+              width='auto'
+              height='auto'
+              loading='lazy'
+              src='/BS-logo.png'
+              alt='branding Logo'
             />
           </Link>
 
-          <div className="lg:hidden">
+          <div className='lg:hidden'>
             <button
               onClick={toggleMenu}
-              className="p-1 text-white bg-orange-600 focus:outline-none"
-              aria-label="toggle menu"
-            >
+              className='p-1 text-white bg-orange-600 focus:outline-none'
+              aria-label='toggle menu'>
               {!isOpen ? (
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
+                  xmlns='http://www.w3.org/2000/svg'
+                  className='w-6 h-6'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                  strokeWidth='2'>
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M4 6h16M4 12h16M4 18h16'
                   />
                 </svg>
               ) : (
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
+                  xmlns='http://www.w3.org/2000/svg'
+                  className='w-6 h-6'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                  strokeWidth='2'>
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M6 18L18 6M6 6l12 12'
                   />
                 </svg>
               )}
             </button>
           </div>
         </div>
-        <div className="flex items-center justify-between px-6">
-          <p className="font-bold text-orange-500">
+        <div className='flex items-center justify-between px-6'>
+          <p className='font-bold text-orange-500'>
             <a
-              href="mailto:info@brandingsolutions.in"
-              className="pr-16 text-orange text-font-bold max-md:mt-3 max-md:ml-3 "
-            >
+              href='mailto:info@brandingsolutions.in'
+              className='pr-16 text-orange text-font-bold max-md:mt-3 max-md:ml-3 '>
               info@brandingsolutions.in
             </a>
           </p>
-          <p className="font-bold text-orange-500">
+          <p className='font-bold text-orange-500'>
             <a
-              href="tel:+919056353599"
-              className="pr-16 text-orange text-font-bold max-md:mt-3 max-md:ml-3 "
-            >
+              href='tel:+919056353599'
+              className='pr-16 text-orange text-font-bold max-md:mt-3 max-md:ml-3 '>
               91-9056353599
             </a>
           </p>
         </div>
         <nav
           className={`fixed inset-0 z-50 transition-transform transform bg-white  lg:bg-transparent lg:relative lg:translate-x-0 ${
-            isOpen ? "translate-x-0" : "-translate-x-full"
-          } lg:flex lg:items-center max-lg:mt-2 max-md:bg-white max-lg:w-[70%] px-6 pb-2 pt-2`}
-        >
-          <div className="lg:flex lg:items-center lg:space-x-6">
+            isOpen ? 'translate-x-0' : '-translate-x-full'
+          } lg:flex lg:items-center max-lg:mt-2 max-md:bg-white max-lg:w-[70%] px-6 pb-2 pt-2`}>
+          <div className='lg:flex lg:items-center lg:space-x-6'>
             {menuItems.map((menuItem, index) => (
               <div
                 key={index}
-                className="relative group"
+                className='relative group'
                 onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
-              >
+                onMouseLeave={handleMouseLeave}>
                 {menuItem.subMenu ? (
                   <>
                     <button
                       onClick={() => toggleSubMenu(index)}
-                      className="flex items-center h-full px-3 py-2 font-semibold text-black transition-colors duration-300 transform rounded-md lg:mt-0 hover:text-orange-600 focus:outline-none"
-                    >
+                      className='flex items-center h-full px-3 py-2 font-semibold text-black transition-colors duration-300 transform rounded-md lg:mt-0 hover:text-orange-600 focus:outline-none'>
                       {menuItem.title}
                       <svg
-                        className="w-4 h-4 ml-1"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                        className='w-4 h-4 ml-1'
+                        fill='none'
+                        stroke='currentColor'
+                        viewBox='0 0 24 24'
+                        xmlns='http://www.w3.org/2000/svg'>
                         <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth='2'
                           d={`${
                             openSubMenuIndex === index
-                              ? "M5 15l7-7 7 7"
-                              : "M19 9l-7 7-7-7"
+                              ? 'M5 15l7-7 7 7'
+                              : 'M19 9l-7 7-7-7'
                           }`}
                         />
                       </svg>
                     </button>
                     <ul
                       className={`${
-                        openSubMenuIndex === index ? "block" : "hidden"
-                      } text-white lg:bg-white bg-opacity-75 max-lg:ml-[30px] lg:ml-[12px] lg:absolute top-10 w-40 left-0 z-10 lg:shadow-lg`}
-                    >
+                        openSubMenuIndex === index ? 'block' : 'hidden'
+                      } text-white lg:bg-white bg-opacity-75 max-lg:ml-[30px] lg:ml-[12px] lg:absolute top-10 w-40 left-0 z-10 lg:shadow-lg`}>
                       {menuItem.subMenu.map((subItem, subIndex) => (
                         <li key={subIndex}>
                           <Link
                             to={subItem.href}
-                            className="block px-3 py-2 font-semibold text-black transition-colors duration-300 transform hover:max-lg:text-orange-600 hover:lg:text-white lg:hover:bg-orange-600"
-                          >
+                            className='block px-3 py-2 font-semibold text-black transition-colors duration-300 transform hover:max-lg:text-orange-600 hover:lg:text-white lg:hover:bg-orange-600'>
                             {subItem.title}
                           </Link>
                         </li>
@@ -208,9 +197,8 @@ export default function Navbar() {
                   </>
                 ) : (
                   <Link
-                    to={menuItem.href || "#"}
-                    className="flex items-center h-full px-3 py-2 font-semibold text-black transition-colors duration-300 transform lg:mt-0 hover:text-orange-600"
-                  >
+                    to={menuItem.href || '#'}
+                    className='flex items-center h-full px-3 py-2 font-semibold text-black transition-colors duration-300 transform lg:mt-0 hover:text-orange-600'>
                     {menuItem.title}
                   </Link>
                 )}
@@ -218,30 +206,28 @@ export default function Navbar() {
             ))}
 
             <div>
-              {/* <button
+              <button
                 // to='/enquiry'
                 onClick={handleToggleEnquiryModal}
-                className="p-2 text-white bg-orange-600 max-md:mt-3 max-md:ml-3 animate-bounce"
-              >
+                className='p-2 text-white bg-orange-600 max-md:mt-3 max-md:ml-3 animate-bounce'>
                 Enquiry Us
               </button>
               <EnquiryModal
                 isOpen={isOpenEnquiryModal}
                 onToogleEnquiryModal={handleToggleEnquiryModal}
-              /> */}
+              />
             </div>
             <div>
-              {/* <button
+              <button
                 // to='/enquiry'
                 onClick={handleToggleApplyJobModal}
-                className="p-2 text-white bg-orange-600 max-md:mt-3 max-md:ml-3 animate-bounce"
-              >
+                className='p-2 text-white bg-orange-600 max-md:mt-3 max-md:ml-3 animate-bounce'>
                 Apply Job
               </button>
               <ApplyJobModal
                 isOpen={isOpenApplyJobModal}
                 onToggleApplyJobModal={handleToggleApplyJobModal}
-              /> */}
+              />
             </div>
           </div>
         </nav>
