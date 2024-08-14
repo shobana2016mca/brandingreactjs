@@ -9,9 +9,9 @@ import ContactUs from "../Components/HomePage/ContactUs";
 // import LatestNewsAndBlogs from "../Components/HomePage/LatestNewsAndBlogs";
 import Compines from "../Components/HomePage/Companies";
 import Services from "../Components/HomePage/Services";
+import EnquiryForm from "../Components/HomePage/EnquiryForm";
 
 import { Helmet } from "react-helmet";
-import EnquiryForm from "../Components/HomePage/EnquiryForm";
 
 function HomePage() {
   const stats = [
@@ -72,8 +72,14 @@ Facebook Ads in Punjab"
         />
         <link rel="canonical" href="http://www.myawesomecompany.com" />
       </Helmet>
-<EnquiryForm/>
       <HeroSection />
+
+      <div className="flex justify-center items-center h-full">
+        <div className="w-2/5 h-full">
+          <h2 className="text-2xl font-bold mb-4 text-center">Enquiry Form</h2>
+          <EnquiryForm />
+        </div>
+      </div>
       <Compines />
       <Services />
 

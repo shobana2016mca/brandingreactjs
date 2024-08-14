@@ -76,14 +76,14 @@ const BreadCrumbComponent: React.FunctionComponent<
       ref={ref}
     >
       <div
-        className={`grid max-w-screen-xl mx-auto ${data?.image == "No" ? " flex items-center justify-center min-h-[400px]" : "grid-col-1 md:grid-cols-2"} `}
+        className={`grid max-w-screen-xl mx-auto ${data?.image === "No" ? " flex items-center justify-center min-h-[400px]" : "grid-col-1 md:grid-cols-2"} `}
       >
         <section
-          className={`flex flex-col justify-center ${data?.image == "No" ? " items-center gap-4" : "lg:ml-36 "} m-4  ${isVisible ? "animate-fadeUp" : ""}`}
+          className={`flex flex-col justify-center ${data?.image === "No" ? " items-center gap-4" : "lg:ml-36 "} m-4  ${isVisible ? "animate-fadeUp" : ""}`}
         >
           {data && (
             <div
-              className={`mt-4 ${data?.image == "No" ? "text-center" : ""} `}
+              className={`mt-4 ${data?.image === "No" ? "text-center" : ""} `}
             >
               <h2 className="mt-4 text-3xl font-bold text-white md:text-7xl ">
                 {data.title}
@@ -111,7 +111,7 @@ const BreadCrumbComponent: React.FunctionComponent<
           </div>
         </section>
         <section
-          className={`max-w-[490px] min-h-[340px] w-full p-3 mt-8 mx-auto ${data?.image == "No" ? "hidden" : "block"} ${isVisible ? "animate-fadeUp" : ""}`}
+          className={`max-w-[490px] min-h-[340px] w-full p-3 mt-8 mx-auto ${data?.image === "No" ? "hidden" : "block"} ${isVisible ? "animate-fadeUp" : ""}`}
         >
           {data && (
             <img
